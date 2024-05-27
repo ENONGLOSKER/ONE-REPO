@@ -1,5 +1,5 @@
 # STRUKTUR
-
+```
 root
 │
 ├── Project1/
@@ -16,3 +16,5 @@ root
     ├── src/
     ├── README.md
     └── ...
+
+```
