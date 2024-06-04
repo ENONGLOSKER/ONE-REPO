@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+nav {
+    display:flex;
+    background: #DCDCDC;
+    justify-content: space-between;
+    align-items: center;
+    height: 87px;
+}
+
+.logo {
+    width: 221.59px;
+    height: 60.22px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
