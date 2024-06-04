@@ -1,0 +1,165 @@
+/* 
+    CATATAN :
+
+    - biasakan menggukan variabel untuk css nya supaya lebih mudah
+    kedepanya dan kode lebih simpel dan rapi serta enak dibaca!
+    - biasakan memberikan keterangan pada kodenya supaya orang lain 
+    bisa mengerti saat membaca kodenya
+
+    #semangat_semuanya💪🔥
+*/
+
+/* --------------------------------------------------------------- */
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* variabel css */
+:root {
+
+    /* warna */
+    --satau: #6900EE;
+    --dua: #B479FF;
+    --tiga: #363636;
+    --putih: #ffffff;
+    --nav: #dcdcdc6e;
+    --gradient: linear-gradient(30deg, #6900EE, #B479FF);
+    --shadow1: #b379ffa6;
+    --shadow2: #ff797990;
+
+    /* border */
+    --border1:22px;
+    --border2:12px;
+    --border3:8px;
+    --border4:6px;
+    --border5:4px;
+
+    /* font */
+    --font1: "Sora", sans-serif;
+    --font2: "Inter", sans-serif;
+
+}
+
+/* settingan awal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: var(--font2);
+}
+
+/* navbar */
+nav{
+    color: var(--putih);
+    background-color: var(--nav);
+    padding: 10px 20px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+    width: 150px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    color: var(--tiga);
+}
+
+.nav-menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul.show {
+    display: block;
+    background-color: var(--putih);
+    border-radius: var(--border2);
+    width: 120px;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+.nav-menu ul li:last-child {
+    background-color: var(--satau);
+    border-radius: var(--border3);
+    color: var(--putih);
+}
+.nav-menu ul li:last-child a{
+    color: var(--putih);
+}
+.nav-menu ul li:last-child a:hover{
+    color: var(--dua);
+}
+
+.nav-menu ul li a {
+    color: var(--tiga);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.nav-menu ul li a:hover {
+    color: var(--satau);
+}
+
+.nav-menu input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.mode-icon {
+    margin-left: 20px;
+    cursor: pointer;
+    /* background-color: red; */
+    /* width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* container */
+.container{
+    background-color: rgba(236, 224, 253, 0.549);
+    margin: 20px;
+    height: 100vh;
+}
+
+
+/* responsif */
+@media (min-width: 768px) {
+    nav {
+        padding: 10px 80px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+    }
+
+    .nav-menu ul.show {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        margin: 0 10px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
