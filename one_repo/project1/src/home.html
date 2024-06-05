@@ -1,28 +1,128 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="img/icon.svg" type="image/x-icon">
 </head>
 <body>
+  
+    <!-- container -->
+    <div class="container">
+    <!-- navbar -->
     <nav>
-        <div class="logo">
-            <img src="../asset/logo.png" alt="">
-        </div>
-        <div class="menu">
+        <img src="../asset/logo.png" alt="onerepo">
+
+        <div class="nav-menu">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><ion-icon name="logo-whatsapp" style="transform: translateY(2px);"></ion-icon> Chating</a></li>
             </ul>
-            <div class="chat">
-                <img src="../asset/wa.png" alt="">
-                <p>Chatting</p>
+            <div class="hamburger-menu">
+                <ion-icon name="menu"></ion-icon>
             </div>
-            <img src="../asset/mode.png" alt="">
+            <div class="mode-icon">
+                <ion-icon name="sunny"></ion-icon>
+            </div>
         </div>
     </nav>
+      <main>
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <div class="intro">
+          <h3>Bersama kami</h3>
+        </div>
+        <div class="intro-main">
+          <img src="../asset/panah1.png" alt="" class="img-1">
+          <h1>Transformasi Ide Anda Menjadi Solusi Digital yang Inovatif dan Efisien</h1>
+        </div>
+        <div class="highlight">
+          <div class="management">
+            <div class="management-logo">
+              <p>Management</p>
+            </div>
+            <div class="management-content">
+
+            </div>
+          </div>
+          <div class="highlight-isi">
+            <p>Karena kami menggabungkan keahlian teknologi terkini dengan pemahaman mendalam tentang kebutuhan bisnis Anda</p>
+            <img src="../asset/panah2.png" alt="">
+          </div>
+          <div class="developer">
+            <p>Developer</p>
+            <div class="rating">
+              <div class="foto"></div>
+              <img src="../asset/star.png" alt="">
+              <span>05,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="technologies">
+            <div class="fhirst">
+              <div class="profil">
+
+              </div>
+              <p>HTML & CSS</p>
+            </div>
+            <div class="fhirst">
+              <div class="profil">
+
+              </div>
+              <p>JAVASCRIPT</p>
+            </div>
+            <div class="fhirst">
+              <div class="profil">
+
+              </div>
+              <p>HTML & CSS</p>
+            </div>
+            <div class="fhirst">
+              <div class="profil">
+
+              </div>
+              <p>TAILWIND CSS</p>
+            </div>
+            <div class="fhirst">
+              <div class="profil">
+
+              </div>
+              <p>REACT JS</p>
+            </div>
+            <div class="fhirst">
+              <div class="profil">
+
+              </div>
+              <p>NODE JS</p>
+            </div>
+          </div>
+        <button class="main-button">Start Project</button>
+    </main>
+
+    </div>
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- humberger menu & icon mode -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('.nav-menu ul').classList.toggle('show');
+        });
+
+        document.querySelector('.mode-icon').addEventListener('click', () => {
+            const modeIcon = document.querySelector('.mode-icon ion-icon');
+            const isSunny = modeIcon.getAttribute('name') === 'sunny';
+            modeIcon.setAttribute('name', isSunny ? 'moon' : 'sunny');
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
 </body>
 </html>

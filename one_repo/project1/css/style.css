@@ -1,29 +1,421 @@
-*{
-    margin:0;
-    padding:0;
+/* 
+    CATATAN :
+    - biasakan menggukan variabel untuk css nya supaya lebih mudah
+    kedepanya dan kode lebih simpel dan rapi serta enak dibaca!
+    - biasakan memberikan keterangan pada kodenya supaya orang lain 
+    bisa mengerti saat membaca kodenya
+    #semangat_semuanya💪🔥
+*/
+
+/* --------------------------------------------------------------- */
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* variabel css */
+:root {
+
+    /* warna */
+    --satu: #6900EE;
+    --dua: #B479FF;
+    --tiga: #363636;
+    --empat:#FF7979;
+    --lima:#FC79FF;
+    --hitam: black;
+    --putih: #ffffff;
+    --abu:#939393;
+    --nav: #dcdcdc6e;
+    --gradient: linear-gradient(30deg, #6900EE, #B479FF);
+    --shadow1: #b379ffa6;
+    --shadow2: #ff797990;
+
+    /* border */
+    --border1:22px;
+    --border2:12px;
+    --border3:8px;
+    --border4:6px;
+    --border5:4px;
+
+    /* font */
+    --font1: "Sora", sans-serif;
+    --font2: "Inter", sans-serif;
+
 }
 
+/* settingan awal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-nav {
-    display:flex;
-    background: #DCDCDC;
+}
+body{
+    font-family: var(--font2);
+}
+
+/* navbar */
+nav{
+    color: var(--putih);
+    background-color: var(--nav);
+    padding: 10px 20px;
+    height: 59px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 87px;
+}
+nav img {
+    width: 150px;
 }
 
-.logo {
-    width: 221.59px;
-    height: 60.22px;
-}
-
-.menu{
+.nav-menu {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    color: var(--tiga);
 }
 
-.menu ul{
+.nav-menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul.show {
+    display: block;
+    background-color: var(--putih);
+    border-radius: var(--border2);
+    width: 120px;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+.nav-menu ul li:last-child {
+    background-color: var(--satu);
+    border-radius: var(--border3);
+    color: var(--putih);
+}
+.nav-menu ul li:last-child a{
+    color: var(--putih);
+}
+.nav-menu ul li:last-child a:hover{
+    color: var(--dua);
+}
+
+.nav-menu ul li a {
+    color: var(--tiga);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.nav-menu ul li a:hover {
+    color: var(--satu);
+}
+
+.nav-menu input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.mode-icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* container start*/
+.container{
+    background-color: rgba(236, 224, 253, 0.549);
+    margin: 0;
+    height: 100vh;
+}
+
+/* Main start */
+
+main {
+    margin: 80px 70.5px auto 68px;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* bg blur start */
+  .bg1{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(8px);
+    -webkit-filter: blur(58px);
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 50%;
+    height: 457px;
+    background: var(--shadow2);
+    z-index: -1;
+  }
+  .bg2{
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(8px);
+    -webkit-filter: blur(58px);
+    margin-top: 30px;
+    margin-left: 650px;
+    width: 50%;
+    height: 457px;
+    background: var(--shadow1);
+    z-index: -2;
+  }
+/* bg blur end */
+
+  /* intro main start (Bersama kami) */
+.intro {
+    width: 211px;
+    height: 49px;
+    border-radius: 15px;
+    background: var(--putih);
+    margin: auto;
+    padding: 13px 33px 16px 32px;
+  }
+  .intro h3{
+    font-family: var(--font1);
+    font-size: 20px;
+    color: var(--abu);
+    width: 146px;
+    height: 20px;
+  }
+  /* Intro end */
+
+  /* bungkus intro inti dari main */
+  .intro-main{
+    width: 1170px;
     display: flex;
-    justify-content: space-between;
-}
+    padding: 0;
+    margin-top:17px;
+    margin-left: 115px;
+    z-index: -1;
+  }
+  /* judul konten writer/isi inti dari main (transformasi digital */
+  .intro-main h1 {
+    font-size: 55px;
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 1rem;
+    color: var(--hitam);
+  }
+  /* tanda panah menuju  card managment */
+  .intro-main img{
+      width: 46px;
+      height: 51px;
+      margin-top: 41px;
+      margin-right: 0;
+      margin-left: 40px;
+      transform: rotate(7deg)
+    }
+/* intro inti dari main selesai */
 
+  /* pembungkus bagian managment,isi/paragraf konten writer dan bagian developer/foto tim + rate*/
+  .highlight {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -90px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+  /* managment start */
+  .highlight .management{
+    padding-top: 11px;
+    padding-left: 9px;
+    margin-right: 0;
+    width: 146px;
+    height: 128px;
+    display: block;
+    background:var(--putih);
+    border-radius:15px;
+  }
+  /* pembungkus judul managment */
+  .highlight .management-logo{
+    width: 128px;
+    margin-bottom: 7px;
+    border-bottom: solid var(--hitam);
+  }
+  /*  judul managment*/
+  .highlight .management-logo p{
+    font-family: var(--font1);
+    width: 75px;
+    height: 15px;
+    font-size: 12px;
+    margin-right: 61px;
+    margin-bottom: 8px;
+    color:var(--abu);
+  }
+
+  /* panah ke developer */
+  .highlight-isi img{
+    position: absolute;
+    margin-left: 380px;
+    margin-top: -50px;
+    transform: rotate(7deg)
+    z-index: -1;
+  }
+  /* kontent managment */
+  .management-content{
+    width: 128px;
+    height: 75px;
+    background: var(--abu);
+    border-radius: 15px;
+    margin-bottom: 0;
+  }
+
+  /* higlight isi paragraf start*/
+
+  .highlight-isi{
+    width: 804px;
+    height: 64px;
+    margin-top:150px;
+    margin-left: 0px;
+  }
+
+  .highlight-isi p{
+    font-family: var(--font1);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--hitam);
+  }
+/* end higlight isi paragraf */
+
+.highlight .developer {
+    width: 186px;
+    height: 82px;
+    padding-top: 5px;
+    background: var(--putih);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .developer p{
+    font-family: var(--font1);
+    margin-right: 80px;
+  }
+
+  .developer .foto{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 5px;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background: var(--dua);
+    border: solid var(--nav);
+    z-index: 1;
+}
+.developer .foto::after{
+    position: absolute;
+    content: "";
+    width: 39px;
+    height: 39px;
+    top: -4px;
+    background: var(--empat);
+    right: -40px;
+    border-radius: 100%;
+    border: solid var(--nav);
+    z-index: -1;
+}
+.developer .foto::before{
+    position: absolute;
+    content: "";
+    background: var(--lima);
+    width: 38px;
+    height: 38px;
+    top: -3.6px;
+    left: 14px;
+    border-radius: 100%;
+    border: solid var(--nav);
+    z-index: -2;
+  }
+  
+  
+.highlight .developer .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .highlight .developer .rating span {
+    font-family: var(--font1);
+    font-size: 1rem;
+    color: var(--hitam);
+  }
+  
+  .technologies {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+ 
+  .technologies .fhirst {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 197px;
+    height: 60px;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+    background: var(--tiga);
+  }
+
+  .technologies .fhirst p{
+    color: var(--putih);
+    font-size: 15px;
+    font-family:var(--font1) ;
+  }
+  .technologies .profil{
+    width: 40px;
+    height: 40px;
+    background: var(--nav);
+    border-radius: 50%;
+  }
+  
+  .main-button {
+    background: var(--satu);
+    font-family: var(--font1);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+
+/* responsif */
+@media (min-width: 768px) {
+    nav {
+        padding: 10px 80px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+    }
+
+    .nav-menu ul.show {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        margin: 0 10px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
