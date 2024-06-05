@@ -5,158 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        nav {
-            background-color: #fff;
-            color: black;
-            text-align: center;
-            padding: 10px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            /* justify-content: space-between; */
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav ul li a:hover {
-            color: #c0c0c0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        .hero {
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: white;
-            text-align: center;
-            padding: 120px 300px;
-            margin-top: 60px;
-            /* margin: 60px 50px 60px 50px; */
-        }
-
-        .hero span {
-            background-color: #ffffff66;
-            font-size: 25px;
-            color: #A7A7A7;
-            padding: 9px;
-            padding: 10px 25px 10px 25px;
-            border-radius: 5px;
-        }
-
-        .hero p {
-            font-size: 24px;
-            margin: 30px 0 0 0;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            /* atas kiri bawah kanan */
-            margin: 0 50px 0 50px;
-        }
-
-        .project-card {
-            background: #f5f5f5;
-            /* atas kiri bawah kanan */
-            padding: 200px 20px 20px 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-card h3 {
-            margin: 0 0 10px;
-            color: #6a1b9a;
-        }
-
-        .project-card p {
-            margin: 0;
-            color: #333;
-        }
-
-        footer {
-            background: linear-gradient(to right, #6a1b9a, #8e24aa);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        footer .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        footer .footer-content div {
-            margin: 10px;
-        }
-
-        footer .footer-content div p {
-            margin: 5px 0;
-        }
-
-        footer .footer-content div a {
-            color: white;
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        footer .footer-content div a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Navbar -->
     <nav>
+        <div>
+            <img src="./img/Group 30.png"  alt="Logo">
+        </div>
         <ul>
-            <li class="logo">
-                <img src="path_to_logo.png" alt="Logo">
-                <span>ONE REPO</span>
-            </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#">Portofolio</a></li>
@@ -165,42 +24,47 @@
         </ul>
     </nav>
 
+    <!-- Hero -->
+
     <div class="hero">
         <span>Galery Proyek Inovatif</span>
         <p>Kembangkan Visi Anda & Wujudkan Inovasi Bersama Kami</p>
         <h1>Develop Your Vision & Realise Innovation With Us</h1>
+        <h2>Developer Team</h2>
+        <div>
+            <img src="#" alt="team">
+            <img src="#" alt="team">
+            <img src="#" alt="team">
+        </div>
     </div>
+
+
+    <!-- Card -->
 
     <div class="projects">
         <div class="project-card">
             <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="project-card">
             <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="project-card">
             <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="project-card">
             <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="project-card">
             <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="project-card">
             <h3>Web Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <!-- Tambahkan lebih banyak project-card sesuai kebutuhan -->
     </div>
@@ -208,8 +72,7 @@
     <footer>
         <div class="footer-content">
             <div>
-                <h3>ONE REPO</h3>
-                <p>ONE REPO TO BE TOGETHER</p>
+                <img src="./img/Group 36.png" width="120" alt="Logo">
             </div>
             <div>
                 <p>Indonesia - West Nusa Tenggara</p>
