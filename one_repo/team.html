@@ -33,6 +33,7 @@
     <div class="container">
         <header>
             <img src="img/garis.svg" alt="onerepo" width="101%" id="garis">
+            <!-- card team -->
             <div class="team">
                 <img src="img/team.png" alt="">
 
@@ -57,9 +58,10 @@
                     <p>Back End</p>
                 </div>
             </div>
+            <!-- bg gradient -->
             <div class="bg"></div>
             <div class="bg"></div>
-
+            <!-- title head -->
             <div class="title">
                 <h4>Meet Our Team</h4>
                 <h3>menyatukan semangat dan keahlian bersama</h3>
@@ -70,16 +72,13 @@
 
         <div class="team-detail">
             <div class="team-skill">
-
                 <div class="team-card">
                     <img src="img/team.png" alt="">
-
                     <div class="team-part">
                         <h4>Alfin Mardani</h4>
                         <p>Front End & UI</p>
                     </div>
                 </div>
-                
                 <div class="team-exp">
                     <div class="">
                         <h3>Experience</h3>
@@ -92,12 +91,12 @@
                         </ul>
                     </div>
                     <a href="">
-                        <ion-icon name="logo-github" style="transform: translateY(2px); width: 20px; height: 20px;"></ion-icon>
+                        <ion-icon name="logo-github" id="github-icon"></ion-icon>
                         Github
                     </a>
                 </div>
-                
             </div>
+
             <div class="team-skill">
                 <div class="team-card">
                     <img src="img/team.png" alt="">
@@ -120,7 +119,7 @@
                         </ul>
                     </div>
                     <a href="">
-                        <ion-icon name="logo-github" style="transform: translateY(2px); width: 20px; height: 20px;"></ion-icon>
+                        <ion-icon name="logo-github" id="github-icon"></ion-icon>
                         Github
                     </a>
                 </div>
@@ -148,7 +147,7 @@
                     </ul>
                     </div>
                     <a href="">
-                        <ion-icon name="logo-github" style="transform: translateY(2px); width: 20px; height: 20px;"></ion-icon>
+                        <ion-icon name="logo-github" id="github-icon"></ion-icon>
                         Github
                     </a>
                 </div>
@@ -160,13 +159,14 @@
     </div>
 
     <footer>
-        <img src="img/one.png" alt="onerepo">
+        <img src="img/one.png" alt="onerepo" >
         <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Team</a></li>
             <li><a href="">Portofolio</a></li>
             <li><a href="">Contact</a></li>
         </ul>
+        
         <ul>
             <li>Indonesia - West Nusa Tenggara</li>
             <li>East Lombok - Suralaga.Anjani</li>
@@ -175,9 +175,9 @@
         </ul>
 
         <div class="media">
-            <a href=""><ion-icon name="logo-instagram" style="width: 30px; height: 30px;"></ion-icon></a>
-            <a href=""><ion-icon name="logo-github" style="width: 30px; height: 30px;"></ion-icon></a>
-            <a href=""><ion-icon name="logo-linkedin" style="width: 30px; height: 30px;"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram" id="media-icon" ></ion-icon></a>
+            <a href=""><ion-icon name="logo-github" id="media-icon"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin" id="media-icon"></ion-icon></a>
         </div>
     </footer>
 
@@ -197,33 +197,6 @@
             modeIcon.setAttribute('name', isSunny ? 'moon' : 'sunny');
             document.body.classList.toggle('dark-mode');
         });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const text = document.querySelector(".animate-text");
-        const strText = text.textContent;
-        const splitWords = strText.split(" ");
-        text.textContent = "";
-
-        splitWords.forEach(word => {
-            const wordContainer = document.createElement("span");
-            wordContainer.className = "word-container";
-
-            const splitChars = word.split("");
-            splitChars.forEach(char => {
-                const charSpan = document.createElement("span");
-                charSpan.textContent = char;
-                wordContainer.appendChild(charSpan);
-            });
-
-            text.appendChild(wordContainer);
-
-            const spaceSpan = document.createElement("span");
-            spaceSpan.textContent = " ";
-            text.appendChild(spaceSpan);
-        });
-    });
-
     </script>
     
 </body>
