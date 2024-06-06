@@ -14,10 +14,10 @@
 
         <div class="nav-menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Portofolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#"><ion-icon name="logo-whatsapp" style="transform: translateY(2px);"></ion-icon> Chating</a></li>
             </ul>
             <div class="hamburger-menu">
@@ -63,7 +63,8 @@
             <div class="title">
                 <h4>Meet Our Team</h4>
                 <h3>menyatukan semangat dan keahlian bersama</h3>
-                <h1 class="animate-text">Bringing Passion and Expertise Together</h1>
+                <h1 data-content="Bringing Passion and Expertise Together">Bringing Passion and Expertise Together</h1>
+
             </div>
         </header>
 
@@ -199,17 +200,30 @@
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const text = document.querySelector(".animate-text");
-            const strText = text.textContent;
-            const splitText = strText.split("");
-            text.textContent = "";
-            splitText.forEach((char, i) => {
-                const span = document.createElement("span");
-                span.textContent = char;
-                span.style.setProperty("--i", i);
-                text.appendChild(span);
+        const text = document.querySelector(".animate-text");
+        const strText = text.textContent;
+        const splitWords = strText.split(" ");
+        text.textContent = "";
+
+        splitWords.forEach(word => {
+            const wordContainer = document.createElement("span");
+            wordContainer.className = "word-container";
+
+            const splitChars = word.split("");
+            splitChars.forEach(char => {
+                const charSpan = document.createElement("span");
+                charSpan.textContent = char;
+                wordContainer.appendChild(charSpan);
             });
+
+            text.appendChild(wordContainer);
+
+            const spaceSpan = document.createElement("span");
+            spaceSpan.textContent = " ";
+            text.appendChild(spaceSpan);
         });
+    });
+
     </script>
     
 </body>

@@ -159,6 +159,7 @@ nav img {
     height: 100%;
     padding-bottom: 50px;
     margin-bottom: 50px;
+    overflow-x: hidden;
 }
 .container header{
     /* margin-top: 20px; */
@@ -180,14 +181,12 @@ nav img {
     border-radius: var(--border1);
     border-left: 4px solid #6900EE;
     box-shadow: 5px 5px 50px var(--shadow1);
-    /* animation: moveUpDown1 3s ease-in-out infinite; */
 }
 
 .container header .team:nth-child(2) {
     top: 20%;
     left: 8%;
     transform: rotate(-8deg);
-    /* animation: moveUpDown1 3s ease-in-out infinite; */
     animation-delay: 0s;
 }
 
@@ -260,34 +259,56 @@ nav img {
     transform: translateX(50%);
 }
 .container header .title h4{
-    font-size: 15px;
+    font-size: 18px;
     color: var(--satau);
     padding-bottom: 20px;
+    animation: showin 1s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes showin{
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
 }
 .container header .title h3{
     font-size: 20px;
     font-weight: 400;
     padding: 15px 0;
+    animation: fadeInbawah 1s ease forwards;
+    display: inline-block;
 }
-.container header .title h1{
+@keyframes fadeInbawah{
+    from {
+        opacity: 0; 
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+.container header .title h1 {
     font-size: 40px;
     font-weight: bold;
     padding: 0 110px;
-}
-.animate-text {
-    display: inline-block;
-}
-
-.animate-text span {
     opacity: 0;
+    animation: fadeInatas 1s ease forwards;
     display: inline-block;
-    animation: fadeIn 0.5s forwards;
-    animation-delay: calc(0.05s * var(--i));
 }
 
-@keyframes fadeIn {
+/* Membuat animasi fadeIn dari kiri ke kanan */
+@keyframes fadeInatas {
+    from {
+        opacity: 0; 
+        transform: translateY(100%);
+    }
     to {
-        opacity: 1;
+        opacity: 1; 
+        transform: translateX(0); 
     }
 }
 
