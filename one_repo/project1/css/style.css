@@ -643,6 +643,17 @@ main {
   .content-box h3,p{
     margin-left: 35px;
   }
+  .last-button{
+    width: 197px;
+    height: 54px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    margin-left: 680px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background: var(--satu);
+  }
   /* end content */
 
   /* footer start */
