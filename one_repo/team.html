@@ -63,7 +63,7 @@
             <div class="title">
                 <h4>Meet Our Team</h4>
                 <h3>menyatukan semangat dan keahlian bersama</h3>
-                <h1>Bringing Passion and Expertise Together</h1>
+                <h1 class="animate-text">Bringing Passion and Expertise Together</h1>
             </div>
         </header>
 
@@ -197,6 +197,20 @@
             document.body.classList.toggle('dark-mode');
         });
     </script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text = document.querySelector(".animate-text");
+            const strText = text.textContent;
+            const splitText = strText.split("");
+            text.textContent = "";
+            splitText.forEach((char, i) => {
+                const span = document.createElement("span");
+                span.textContent = char;
+                span.style.setProperty("--i", i);
+                text.appendChild(span);
+            });
+        });
+    </script>
+    
 </body>
 </html>
