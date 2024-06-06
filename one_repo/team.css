@@ -156,8 +156,7 @@ nav img {
 /* container */
 .container{
     height: 100%;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 20px;
     overflow-x: hidden;
 }
 .container header{
@@ -337,7 +336,7 @@ nav img {
 /* team-detail */
 .container .team-detail{
     margin: 0 20px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 
 }
 .container .team-detail .team-skill{
@@ -418,7 +417,6 @@ nav img {
 
 #garis_bawah{
     transform: translateX(-2px);
-    margin-top: 10px;
 }
 
 footer{
