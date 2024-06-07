@@ -532,7 +532,7 @@ body.dark-mode .container .team-detail {
     }
     .container header .team {
         position: absolute;
-        padding: 20px;
+        padding: 25px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -575,7 +575,9 @@ body.dark-mode .container .team-detail {
         font-size: 12px;
         color: var(--satau);
     }
-    
+    .container header .team .team-part h4{
+        font-size: 18px;
+    }
     
     .team:nth-child(2) { animation: moveUpDownWithRotate1 3s ease-in-out infinite; }
     .team:nth-child(3) { animation: moveUpDownWithRotate2 3s ease-in-out infinite; }
@@ -707,19 +709,20 @@ body.dark-mode .container .team-detail {
         margin-bottom: 20px;
     }
     .container .team-detail .team-skill .team-card{
-        width: 243px;
-        height: 270px;
-        padding: 15px;
+        width: 40%;
+        height: 320px;
+        padding: 25px 12px;
         background-color: var(--putih);
         border-radius: var(--border1);
         border-left: 4px solid var(--satau);
         box-shadow: 5px 5px 30px #b379ff3a;
     }
     .container .team-detail .team-skill img{
-        width: 200px;
+        width: 230px;
     }
     .container .team-detail .team-skill .team-part{
         padding: 10px 0;
+        margin-bottom: 10px;
     }
     .container .team-detail .team-skill .team-part p{
         font-size: 12px;
@@ -728,8 +731,8 @@ body.dark-mode .container .team-detail {
     
     .container .team-detail .team-skill .team-exp{
         width: 100%;
-        height: 270px;
-        padding: 30px 50px;
+        height: 320px;
+        padding: 30px 50px 60px 50px;
         background-color: var(--putih);
         border-radius: var(--border1);
         border-bottom: 4px solid #6900EE;
