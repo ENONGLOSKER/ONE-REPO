@@ -1,3 +1,16 @@
+/* 
+    CATATAN :
+
+    - biasakan menggukan variabel untuk css nya supaya lebih mudah
+    kedepanya dan kode lebih simpel dan rapi serta enak dibaca!
+    - biasakan memberikan keterangan pada kodenya supaya orang lain 
+    bisa mengerti saat membaca kodenya
+
+    #semangat_semuanya💪🔥
+*/
+
+/* --------------------------------------------------------------- */
+
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -140,68 +153,11 @@ nav img {
     box-shadow: 2px 2px 20px var(--shadow1);
 }
 
-.hero {
-    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
-    color: black;
-    text-align: center;
-    padding: 120px 300px;
-    margin-top: 60px;
-    font-family: var(--font1);
+/* container */
+.container{
+    height: 100%;
 }
 
-.hero span {
-    background-color: #ffffff66;
-    font-size: 25px;
-    color: #A7A7A7;
-    padding: 10px 25px;
-    border-radius: 5px;
-}
-
-.hero p {
-    font-size: 24px;
-    margin: 30px 0 0 0;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-/* .hero h1 span {
-    background-color: #ffffff66;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-} */
-
-.hero h2{
-    font-size: 13px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    margin: 0 50px;
-}
-
-.project-card {
-    background: #f5f5f5;
-    padding: 200px 20px 20px 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project-card h3 {
-    margin: 0 0 10px;
-    color: #6a1b9a;
-}
-
-.project-card p {
-    margin: 0;
-    color: #333;
-}
 footer{
     background-image: linear-gradient(-15deg, #6900EE, #B479FF );
     display: flex;
@@ -246,8 +202,28 @@ body.dark-mode nav {
 body.dark-mode .nav-menu ul li a {
     color: #ffffff;
 }
-body.dark-mode .hero {
+
+body.dark-mode .container header .team {
+    color: var(--tiga);
+}
+
+body.dark-mode .container header .title h4 {
+    color: var(--shadow1);
+}
+
+body.dark-mode .container header .title h3 {
     color: #ffffff;
+}
+
+body.dark-mode .container header .title h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .container header .team .team-part p {
+    color: #B479FF;
+}
+body.dark-mode .container .team-detail {
+    color: var(--tiga);
 }
 
 
@@ -280,6 +256,219 @@ body.dark-mode .hero {
         display: none;
     }
 
+    /* container */
+    .container{
+        height: 100%;
+        padding: 50px 0;
+    }
+    .container header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        height: 400px;
+        text-transform: capitalize;
+        font-family: var(--font1);
+        font-size: 20px;
+        position: relative;
+        left: 25%;
+        top: 20%;
+    }
+    .container header span{
+        background-color: rgba(250, 250, 250, 0.438);
+        color: #8f8f8f;
+        padding: 8px 18px;
+        border-radius: var(--border3);
+    }
+    .container header h1{
+        margin: 20px 0 50px 0;
+        font-family: var(--font1);
+    }
+    .container header p{
+        width: 80%;
+    }
+    .container header .bg{
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        z-index: -20;
+        filter: blur(90px);
+        -webkit-filter: blur(120px);
+        position: absolute;
+        border-radius: 50%;
+    }
+    .container header div:nth-child(1){
+        background-color: rgb(212, 0, 255);
+        top: 20%;
+        left: 20%;
+    }
+    .container header div:nth-child(2){
+        background-color: rgb(255, 0, 149);
+        top: 50%;
+        left: 50%;
+    }
+
+    /* panah & asset kiri*/
+    .container #panah1{
+        position: absolute;
+        left: -50px;
+        top: 20%;
+    }
+    .container header .head-developer{
+        background-color: rgb(241, 241, 241);
+        position: absolute;
+        left: -150px;
+        top: 40%;
+        padding: 10px;
+        border-radius: var(--border2);
+        box-shadow: 4px 4px 40px #b379ff9c;
+    }
+    .container header .head-developer p{
+        font-size: 16px;
+        padding: 5px 0;
+        color: #8f8f8f;
+    }
+    .container header .head-developer #colorPicker1{
+        width: 150px;
+        height: 130px;
+        border: none;
+        background-color: transparent;
+    }
+
+    /* panah & asset kanan */
+    .container #panah2{
+        position: absolute;
+        right: -2px;
+        top: 60%;
+    }
+    .container header .head-ide{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        right: -20%;
+        top: 30%;
+        padding: 10px 15px;
+        border-radius: var(--border2);
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+    .container header .head-ide p{
+        font-size: 16px;
+        padding: 10px 0;
+        width: 30%;
+        color: #8f8f8f;
+    }
+    .container header .head-ide .dev{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 10px;
+       background-color: transparent;
+    }
+    .container header .head-ide .dev .dev-tim{
+        display: flex;
+        background-color: transparent;
+    }
+    .container header .head-ide .dev img{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgb(230, 230, 230);
+        border: 4px solid rgb(255, 255, 255);
+    }
+    .container header .head-ide .dev img:nth-child(2){
+        margin-left: -15px;
+    }
+    .container header .head-ide .dev img:nth-child(3){
+        margin-left: -15px;
+    }
+    .container header .head-ide .dev .dev-ret{
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .container header .head-ide .dev .dev-ret #colorPicker2{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .container header #get-started{
+        margin-top: 50px;
+        background-color: var(--satau);
+        color: var(--putih);
+        padding: 12px 22px;
+        border-radius: var(--border2);
+        text-decoration: none;
+    }
+    .container header #get-started:hover{
+        background-color: #6f01b8;
+        box-shadow: 2px 2px 50px rgba(164, 53, 255, 0.664);
+    }
+    .container header .head-media{
+        margin-top: 50px;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+    .container header .head-media #icon{
+        width: 25px;
+        height: 25px;
+        background-color: rgba(236, 236, 236, 0.87);
+        color: #363636a2;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    .container header .head-media #icon:hover{
+        background-color: var(--satau);
+        color: var(--putih);
+    }
+
+
+
+
+    .skill {
+        padding:120px 20px;
+        display: flex;
+        gap: 20px;
+        overflow: hidden; 
+        white-space: nowrap;
+        background-color: transparent;
+    }
+    .skill .skill-item {
+        background-color: rgb(241, 241, 241);
+        padding: 10px 20px;
+        border-radius: var(--border3);
+        display: inline-flex; 
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        animation: slide 10s linear infinite; 
+    }
+    .skill .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0); 
+        }
+        100% {
+            transform: translateX(-100%); 
+        }
+    }
+
+
+
+
+
+    
     footer{
         background-image: linear-gradient(-15deg, #6900EE, #B479FF );
         display: flex;
@@ -290,7 +479,6 @@ body.dark-mode .hero {
         height: 220px;
         text-align: left;
     }
-
     footer img{
         width: 13%;
     }
@@ -312,5 +500,4 @@ body.dark-mode .hero {
         width: 30px;
         height: 50px;
     }
-
 }
