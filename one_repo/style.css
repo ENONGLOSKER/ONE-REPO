@@ -26,8 +26,9 @@
     --putih: #ffffff;
     --nav: rgba(236, 224, 253, 0.549);
     --gradient: linear-gradient(30deg, #6900EE, #B479FF);
-    --shadow1: #b379ffa6;
-    --shadow2: #ff797990;
+    --shadow1: #7002ff;
+    --shadow2: rgb(0, 105, 251);
+    --shadow3: #9342fc88;
 
     /* border */
     --border1:22px;
@@ -229,6 +230,9 @@ body.dark-mode .container .team-detail {
 
 /* responsif ================================================================ */
 @media (min-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     nav {
         padding: 10px 80px;
     }
@@ -299,12 +303,12 @@ body.dark-mode .container .team-detail {
         border-radius: 50%;
     }
     .container header div:nth-child(1){
-        background-color: rgb(212, 0, 255);
+        background-color: var(--shadow1);
         top: 20%;
         left: 20%;
     }
     .container header div:nth-child(2){
-        background-color: rgb(255, 0, 149);
+        background-color: var(--shadow2);
         top: 50%;
         left: 50%;
     }
@@ -448,40 +452,112 @@ body.dark-mode .container .team-detail {
     }
 
     /* skill  */
-    .skill {
-        padding:120px 20px;
-        display: flex;
-        gap: 20px;
-        overflow: hidden; 
-        white-space: nowrap;
-        background-color: transparent;
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translate(-100%);
+        }
     }
-    .skill .skill-item {
+    .logos{
+        margin: 80px;
+        padding: 20px 0;
+        white-space: nowrap;
+    }
+    .logos:hover .logos-slide{
+        animation-play-state: paused;  
+    }
+    .logos-slide{
+        display: inline-block;
+        animation: 46s slide infinite linear ;
+    }
+
+    .skill-item {
         background-color: rgb(241, 241, 241);
-        padding: 10px 20px;
+        padding: 2px 20px 2px 3px;
         border-radius: var(--border3);
         display: inline-flex; 
         align-items: center;
         justify-content: center;
-        gap: 10px;
-        animation: slide 10s linear infinite; 
-    }
-    .skill .skill-item img {
-        width: 50px;
-        height: 50px;
+        margin-left: 20px;
     }
 
-    @keyframes slide {
-        0% {
-            transform: translateX(0); 
-        }
-        100% {
-            transform: translateX(-100%); 
-        }
+    .logos .logos-slide img{
+        height: 60px;
+        padding: 10px;
+        border-radius: 12px;
     }
 
+    .container .team{
+        margin: 0 80px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .container .team #logo-team{
+        background-image: linear-gradient(160deg, var(--dua), var(--satau));
+        padding: 10px 30px;
+        border-radius: var(--border1);
+        box-shadow: 5px 5px 30px var(--shadow3);
+    }
+    .container .team .team-members{
+        background-color: #f5f5f5;
+        color: rgb(5, 5, 5);
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 15px;
+        padding: 18px;
+        border-radius: var(--border1);
+        border-left: 4px solid var(--satau);
+        box-shadow: 5px 5px 30px #b379ff3a;
+    }
+    .container .team .team-members h2{
+       color: var(--tiga);
+       width: 90%;
+       font-size:50px;
+       transform: rotate(-90deg);
+       margin: 0 0 70px -50px;
+       font-family: var(--font1);
+    }
+    .container .team .team-members span{
+       color: var(--satau);
+    }
+    .container .team .team-members .member{
+       background-color: var(--putih);
+       border-radius: var(--border1);
+       border-right: 4px solid var(--satau);
+       padding: 20px;
+    }
+    .container .team .team-members .member p{
+       color: var(--satau);
+    }
+    .container .team .team-members .member img{
+       width: 220px;
+       height: 200px;
+    }
 
-
+    /* peroject */
+    .container .project{
+        margin: 100px 80px 20px 80px;
+        /* background-color: #79d5ff; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .project .project-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 60%;
+    }
+    .container .project .project-title h1{
+        margin: 20px 0;
+        color:var(--satau);
+    }
 
 
     
