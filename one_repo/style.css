@@ -203,6 +203,16 @@ body.dark-mode .nav-menu ul li a {
     color: #ffffff;
 }
 
+body.dark-mode .container header span{
+    color: var(--putih);
+}
+.dark-mode #panah1 {
+    filter: invert(100%);
+}
+.dark-mode #panah2 {
+    filter: invert(100%);
+}
+
 body.dark-mode .container header .team {
     color: var(--tiga);
 }
@@ -550,6 +560,7 @@ body.dark-mode .container .team-detail {
         background: var(--nav);
         border-radius: 20px;
         border-left: solid var(--satau);
+        box-shadow: 4px 4px 40px #b379ff79;
     }
     .team-content::before{
         position: absolute;
@@ -628,6 +639,7 @@ body.dark-mode .container .team-detail {
         align-items: center;
         padding: 20px;
         border-radius: 5px;
+        box-shadow: 4px 4px 40px #b379ff79;
     }
     
     .item-1 {
