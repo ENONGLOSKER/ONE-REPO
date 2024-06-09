@@ -278,15 +278,21 @@ body.dark-mode .container .team-detail {
     .container header span{
         background-color: rgba(250, 250, 250, 0.438);
         color: #8f8f8f;
+        margin-left: -38px;
         padding: 8px 18px;
         border-radius: var(--border3);
     }
     .container header h1{
+        width: 1158px;
         margin: 20px 0 50px 0;
         font-family: var(--font1);
+        font-size: 55px
     }
-    .container header p{
-        width: 80%;
+    .container header .phead{
+        font-size: 25px;
+        width: 864px;
+        margin-top: 20px;
+        margin-right: 20px;
     }
     .container header .bg{
         width: 290px;
@@ -312,26 +318,31 @@ body.dark-mode .container .team-detail {
     /* panah & asset kiri*/
     .container #panah1{
         position: absolute;
-        left: -50px;
-        top: 20%;
+        left: -180px;
+        top: 22%;
     }
     .container header .head-developer{
         background-color: rgb(241, 241, 241);
+        width: 146px;
+        height: 128px;
         position: absolute;
-        left: -150px;
+        left: -250px;
         top: 40%;
         padding: 10px;
         border-radius: var(--border2);
         box-shadow: 4px 4px 40px #b379ff9c;
     }
     .container header .head-developer p{
-        font-size: 16px;
-        padding: 5px 0;
+        font-size: 12px;
+        padding: 0;
+        margin-bottom: 7px;
+        margin-right: 50px;
         color: #8f8f8f;
     }
     .container header .head-developer #colorPicker1{
-        width: 150px;
-        height: 130px;
+        width: 128px;
+        margin-top: 3px;
+        height: 75px;
         border: none;
         background-color: transparent;
     }
@@ -339,29 +350,33 @@ body.dark-mode .container .team-detail {
     /* panah & asset kanan */
     .container #panah2{
         position: absolute;
-        right: -2px;
-        top: 60%;
+        right: -25px;
+        top: 300px;
     }
     .container header .head-ide{
         background-color: rgb(255, 255, 255);
+        width: 158px;
+        height: 82px;
         position: absolute;
         right: -20%;
-        top: 30%;
+        top: 50%;
         padding: 10px 15px;
         border-radius: var(--border2);
         box-shadow: 4px 4px 40px #b379ff79;
     }
     .container header .head-ide p{
-        font-size: 16px;
+        font-size: 12px;
+        margin-top: -8px;
         padding: 10px 0;
         width: 30%;
         color: #8f8f8f;
     }
     .container header .head-ide .dev{
        display: flex;
-       justify-content: center;
+       justify-content: space-between;
        align-items: center;
-       gap: 10px;
+       margin-right: -10px;
+       gap: 5px;
        background-color: transparent;
     }
     .container header .head-ide .dev .dev-tim{
@@ -369,30 +384,30 @@ body.dark-mode .container .team-detail {
         background-color: transparent;
     }
     .container header .head-ide .dev img{
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
         border-radius: 50%;
         background-color: rgb(230, 230, 230);
         border: 4px solid rgb(255, 255, 255);
     }
     .container header .head-ide .dev img:nth-child(2){
-        margin-left: -15px;
+        margin-left: -12px;
     }
     .container header .head-ide .dev img:nth-child(3){
-        margin-left: -15px;
+        margin-left: -12px;
     }
     .container header .head-ide .dev .dev-ret{
         background-color: transparent;
-        font-size: 14px;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 27px;
+        height: 31px;
+        margin-bottom: 20px;
+        margin-left: 2px;
         gap: 5px;
     }
     .container header .head-ide .dev .dev-ret #colorPicker2{
-        width: 40px;
-        height: 40px;
+        width: 37px;
+        height: 35px;
         background-color: transparent;
         border: none;
     }
@@ -417,6 +432,7 @@ body.dark-mode .container .team-detail {
 
     .container header #get-started{
         margin-top: 50px;
+        margin-right: 26px;
         background-color: var(--satau);
         color: var(--putih);
         padding: 12px 22px;
@@ -429,6 +445,7 @@ body.dark-mode .container .team-detail {
     }
     .container header .head-media{
         margin-top: 50px;
+        margin-right: 25px;
         /* background-color: yellow; */
         display: flex;
         justify-content: space-between;
@@ -450,27 +467,297 @@ body.dark-mode .container .team-detail {
     /* skill  */
     .skill {
         padding:120px 20px;
+        margin-top: 50px;
         display: flex;
+        justify-content: center;
         gap: 20px;
         overflow: hidden; 
         white-space: nowrap;
         background-color: transparent;
     }
     .skill .skill-item {
-        background-color: rgb(241, 241, 241);
+        background: var(--tiga);
+        width: 197px;
+        height: 60px;
         padding: 10px 20px;
-        border-radius: var(--border3);
+        border-radius: 15px;
+        margin-right: auto;
         display: inline-flex; 
         align-items: center;
-        justify-content: center;
-        gap: 10px;
-        animation: slide 10s linear infinite; 
+        justify-content: space-between;
+        gap: 1px;
+        animation: slide 30s linear infinite; 
     }
-    .skill .skill-item img {
-        width: 50px;
-        height: 50px;
+    @keyframes slide {
+        0% {
+            transform: translateX(100vw);
+        }
+        50% {
+            transform: translateX(-100vw);
+        }
+        100% {
+            transform: translateX(100vw);
+        }
+    }
+    .skill .skill-item #ion {
+        width: 30px;
+        height: 30px;
+        color: var(--putih);
+        padding: 8px;
+        border-radius: 50%;
+        border: solid var(--nav);
+        margin-right: 10px;
+    }
+    .skill .skill-item h4{
+        color: var(--putih);
+        margin-right: 20px;
+    }
+    .skill .skill-item #html, #js{
+        margin-right: -4px;
+    }
+    .skill .skill-item #tailwind, #node, #py{
+        margin-right: 20px;
+    }
+    .skill .skill-item #react{
+        margin-right: 40px;
     }
 
+    .team{
+        display: flex;
+        width: 100%;
+        height: 299px;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    #logos{
+        width: 285px;
+        height: 279px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 40px #b379ff79;
+        margin-left: 80px;
+    }
+    .team-content{
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 30px;
+        margin-right: 20px;
+        width: 955px;
+        height: 279px;
+        background: var(--nav);
+        border-radius: 20px;
+        border-left: solid var(--satau);
+    }
+    .team-content::before{
+        position: absolute;
+        content: 'DEVELOPER';
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        left: -60px;
+        transform: rotate(-90deg);
+    }
+    .team-content::after{
+        position: absolute;
+        content: 'TEAM';
+        font-size: 40px;
+        font-weight: bold;
+        color: var(--satau);
+        bottom: 57px;
+        left: 60px;
+        transform: rotate(-90deg);
+    }
+    .team-content .member-team{
+        width: 200px;
+        height: 220px;
+        padding-right: 20px;
+        border-radius: 15px;
+        border-right: solid var(--satau);
+        color: var(--putih);
+        background-color: var(--putih);
+        margin-right: 40px;
+    }
+    .team-content .member-team img{
+        margin-top: 20px;
+        margin-bottom: 7px;
+        width: 180px;
+        height: 140px;
+    }
+    .team-content .member-team H3{
+        color: #0b0035;
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    .team-content .member-team P{
+        color: var(--satau);
+        font-size: 12px;
+        margin-left: 25px;
+    }
+    main #success{
+        text-align: center;
+        font-size: 50px;
+        font-family: var(--font1);
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        color: var(--satau);
+    }
+    main #hasil{
+        margin: auto;
+        text-align: center;
+        width: 898px;
+    }
+    .grid {
+        width: 1282px;
+        height: 586px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .item {
+        background-color: var(--nav);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .item-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        display: block;
+    }
+    
+    .item-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: block;
+    }
+    
+    .item-3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: block;
+    }
+    .item #item1{
+        margin-top: 340px;
+        font-size: 30px;
+        text-align: justify;
+        color: var(--satau);
+    }
+    .item #item2, #item3{
+        font-size: 30px;
+        margin-top: 70px;
+        text-align: justify;
+        color: var(--satau);
+    }
+    .item p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    main #def{
+        font-size: 50px;
+        font-family: var(--font1);
+        text-align: center;
+        color: var(--satau);
+        margin-bottom: 20px
+    }
+
+    main .diferent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1281px;
+        height: 326px;
+        margin: auto;
+        }
+    .diferent-1{
+        position: relative;
+        width: 413px;
+        height: 326px;
+        background: var(--putih);
+        border-radius: 20px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+    .diferent-1::before{
+        position: absolute;
+        content: '';
+        height: 90px;
+        width: 90px;
+        bottom: 205px;
+        left: 30px;
+        border-radius: 50%;
+        background: var(--satau);
+    }
+    
+    .diferent-2{
+        position: relative;
+        width: 413px;
+        height: 326px;
+        background: var(--putih);
+        border-radius: 20px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+    .diferent-2::before{
+        position: absolute;
+        content: '';
+        height: 90px;
+        width: 90px;
+        bottom: 205px;
+        left: 30px;
+        border-radius: 50%;
+        background: var(--satau);
+    }
+    .diferent-3{
+        position: relative;
+        width: 413px;
+        height: 326px;
+        background: var(--putih);
+        border-radius: 20px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+    .diferent-3::before{
+        position: absolute;
+        content: '';
+        height: 90px;
+        width: 90px;
+        bottom: 205px;
+        left: 30px;
+        border-radius: 50%;
+        background: var(--satau);
+    }
+    
+    .diferent h1{
+        font-size: 30px;
+        color: var(--satau);
+        margin: 170px auto 20px 30px;
+    }
+    .diferent p{
+        font-size: 16px;
+        margin-left: 30px;
+        width: 300px;
+    }
+    main #end-btn{
+        width: 197px;
+        height: 54px;
+        align-items: center;
+        margin: 50px 670px;
+        color: var(--putih);
+        border: none;
+        background: var(--satau);
+        border-radius: 20px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+/* 
     @keyframes slide {
         0% {
             transform: translateX(0); 
@@ -478,7 +765,7 @@ body.dark-mode .container .team-detail {
         100% {
             transform: translateX(-100%); 
         }
-    }
+    } */
 
 
 
