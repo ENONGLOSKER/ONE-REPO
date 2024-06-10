@@ -241,25 +241,26 @@ body.dark-mode .container .team-detail {
 @media (min-width: 768px) {
     nav {
         padding: 10px 80px;
-    }
-
-    .nav-menu ul {
-        display: flex;
-        position: static;
-        width: auto;
-        box-shadow: none;
-        border: none;
-        background-color: transparent;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-    }
-
-    .nav-menu ul.show {
-        display: flex;
-    }
-
-    .nav-menu ul li {
-        margin: 0 10px;
+        }
+        
+        .nav-menu ul {
+            display: flex;
+            position: static;
+            width: auto;
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            }
+            
+            .nav-menu ul.show {
+                display: flex;
+                }
+                
+                .nav-menu ul li {
+                    margin: 0 10px;
+                    z-index: 5;
     }
 
     .hamburger-menu {
@@ -531,7 +532,12 @@ body.dark-mode .container .team-detail {
     .skill .skill-item #react{
         margin-right: 40px;
     }
-
+    .skill .skill-item #tailwind-logo2{
+        display: none;
+    }
+    .team-responsive{
+        display: none;
+    }
     .team{
         display: flex;
         width: 100%;
@@ -539,7 +545,6 @@ body.dark-mode .container .team-detail {
         margin: auto;
         justify-content: space-around;
         align-items: center;
-
     }
     #logos{
         width: 285px;
@@ -816,3 +821,421 @@ body.dark-mode .container .team-detail {
         height: 50px;
     }
 }
+
+
+
+
+/* responsive lebar layar hp */
+
+@media only screen and (max-width:768px) {
+    .container header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        height: 350px;
+        text-transform: capitalize;
+        font-family: var(--font1);
+        font-size: 20px;
+        position: relative;
+        left: 25%;
+        top: 20%;
+    }
+    .container header span{
+        background-color: rgba(250, 250, 250, 0.438);
+        color: #8f8f8f;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-left: -42px;
+        padding: 8px 18px;
+        border-radius: var(--border3);
+    }
+    .container header h1{
+        width: 120%;
+        margin-right: 30px;
+        margin-top: 10px;
+        font-family: var(--font1);
+        font-size: 15px
+    }
+    .container header .phead{
+        font-size: 10px;
+        width: 130%;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+   /* Definisikan elemen latar belakang */
+   .container header .bg {
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    z-index: -20;
+    filter: blur(90px);
+    -webkit-filter: blur(70px);
+    border-radius: 50%;
+    animation: colorChange 2s infinite alternate;
+}
+
+.container header .bg:nth-child(1) {
+    background-color: rgb(212, 0, 255);
+    top: 20%;
+    left: -20%;
+    animation: colorChange1 10s infinite alternate;
+}
+
+.container header .bg:nth-child(2) {
+    background-color: rgb(255, 0, 149);
+    top: 20%;
+    left: 70%;
+    animation: colorChange2 10s infinite alternate;
+}
+
+@keyframes colorChange1 {
+    0% { background-color: rgb(212, 0, 255); }
+    50% { background-color: rgb(255, 0, 149); }
+    100% { background-color: rgb(0, 255, 212); }
+}
+
+@keyframes colorChange2 {
+    0% { background-color: rgb(255, 0, 149); }
+    50% { background-color: rgb(0, 255, 212); }
+    100% { background-color: rgb(212, 0, 255); }
+}
+
+
+    /* panah & asset kiri*/
+    .container #panah1{
+        position: absolute;
+        width: 15%;
+        display: none;
+        left: -60px;
+        top: 25%;
+    }
+    .container header .head-developer{
+        display: none;
+    }
+    .container #panah2{
+        position: absolute;
+        right: -25px;
+        display: none;
+        top: 300px;
+    }
+    .container header .head-ide{
+       display: none;
+    }
+    .container header #get-started{
+        width: 40%;
+        height: 10%;
+        font-size: 10px;
+        margin-top: 4%;
+        margin-right: 8%;
+        background-color: var(--satau);
+        color: var(--putih);
+        padding-top: 4px;
+        padding: auto;
+        border-radius: var(--border2);
+        text-decoration: none;
+    }
+    .container header #get-started:hover{
+        background-color: #6f01b8;
+        box-shadow: 2px 2px 50px rgba(164, 53, 255, 0.664);
+    }
+    .container header .head-media{
+        margin-top: 10%;
+        margin-right: 50%;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+    }
+    .container header .head-media #icon{
+        width: 15px;
+        height: 15px;
+        background-color: rgba(236, 236, 236, 0.87);
+        color: #363636a2;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    .container header .head-media #icon:hover{
+        background-color: var(--satau);
+        color: var(--putih);
+    }
+    .skill {
+        padding: 10px 10px; /* Mengurangi padding */
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden; 
+        white-space: nowrap;
+        background-color: transparent; /* Mengurangi margin-top */
+        gap: 10px; /* Mengurangi gap antar item */
+    }
+        
+        .skill .skill-item {
+        background: var(--tiga);
+        display: inline-flex; 
+        align-items: center;
+        justify-content: space-between;
+        width: 150px; 
+        height: 50px; 
+        padding: 5px 10px;
+        border-radius: 10px;
+        gap: 5px;
+        animation: slide 30s linear infinite; 
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(100vw);
+        }
+        50% {
+            transform: translateX(-100vw);
+        }
+        100% {
+            transform: translateX(100vw);
+        }
+    }
+    .skill .skill-item #ion {
+        width: 20px;
+        height: 20px;
+        padding: 4px;
+        border: solid var(--nav);
+        border-radius: 50%;
+        margin-right: 5px; 
+        color: var(--putih);
+    }
+    .skill .skill-item #tailwind-logo {
+        display: none;
+    }
+
+    .skill .skill-item h4 {
+        margin-right: 10px;
+        font-size: 12px;
+        color: var(--putih);
+    }
+
+    .skill .skill-item #html, #js {
+        margin-right: 0;
+    }
+
+    .skill .skill-item #node, #py {
+        margin-right: 10px;
+    }
+
+    .skill .skill-item #react {
+        margin-right: 20px;
+    }
+    .team{
+        display: none;
+    }
+    .team-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        margin-right: 20px;
+        width: 160%;
+    }
+
+    #logos-responsive {
+        width: 20%;
+        margin-right: 10px;
+        border-radius: 8px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+
+    .team-content-responsive {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .team-content-responsive .member-team-responsive {
+        width: 30%;
+        padding-right: 10px;
+        border-radius: 8px;
+        border-right: solid var(--satau);
+        background-color: var(--putih);
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+
+    .team-content-responsive .member-team-responsive img {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .team-content-responsive .member-team-responsive h3 {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+
+    .team-content-responsive .member-team-responsive p {
+        font-size: 4px;
+    }
+
+
+
+   
+    main #success{
+        text-align: center;
+        font-size: 20px;
+        font-family: var(--font1);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        color: var(--satau);
+    }
+    main #hasil{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .grid {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr; /* Ubah menjadi satu kolom */
+        grid-template-rows: repeat(3, auto); /* Setiap item akan berada di baris sendiri */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .item {
+        background-color: var(--nav);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+
+    .item-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: block;
+    }
+
+    .item-2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: block;
+    }
+
+    .item-3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        display: block;
+    }
+
+    .item #item1{
+        margin-top: 20px;
+        font-size: 24px;
+        text-align: justify;
+        color: var(--satau);
+    }
+
+    .item #item2, #item3{
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: justify;
+        color: var(--satau);
+    }
+
+    .item p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    main #def {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: var(--satau);
+    }
+
+    main .diferent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        margin: 20px auto;
+    }
+
+    .diferent-1{
+        position: relative;
+        width: 50%;
+        height: 100%; 
+        margin: auto 2px;
+        box-shadow: 4px 4px 20px #b379ff79;
+    }
+    .diferent-1::before{
+        position: absolute;
+        content: '';
+        height: 30px;
+        width: 30px;
+        bottom: 55px;
+        left: 15px;
+        border-radius: 50%;
+        background: var(--satau);
+    }
+    .diferent-2{
+        position: relative;
+        width: 50%;
+        height: 100%; 
+        margin: auto 2px;
+        box-shadow: 4px 4px 20px #b379ff79;
+    }
+    .diferent-2::before{
+        position: absolute;
+        content: '';
+        height: 30px;
+        width: 30px;
+        bottom: 55px;
+        left: 15px;
+        border-radius: 50%;
+        background: var(--satau);
+    }
+    .diferent-3{
+        position: relative;
+        width: 50%;
+        height: 100%; 
+        margin: auto 2px;
+        box-shadow: 4px 4px 20px #b379ff79;
+    }
+    .diferent-3::before{
+        position: absolute;
+        content: '';
+        height: 30px;
+        width: 30px;
+        bottom: 55px;
+        left: 15px;
+        border-radius: 50%;
+        background: var(--satau);
+    }
+    .diferent h1 {
+        font-size: 8px; 
+        margin: 55px auto 5px 10px;
+    }
+
+    .diferent p {
+        font-size: 4px; 
+        margin-left: 10px;
+        width: 80%;
+    }
+
+    main #end-btn {
+        width: 77px;
+        height: 24px;
+        font-size: 8px;
+        align-items: center;
+        margin: 10px auto 20px 150px;
+        color: var(--putih);
+        border: none;
+        background: var(--satau);
+        border-radius: 20px;
+        box-shadow: 4px 4px 40px #b379ff79;
+    }
+}
+
