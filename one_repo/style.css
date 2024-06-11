@@ -235,6 +235,16 @@ body.dark-mode .container header .team .team-part p {
 body.dark-mode .container .team-detail {
     color: var(--tiga);
 }
+body.dark-mode .container header .head-media #icon{
+        color: var(--tiga);
+        background-color: var(--putih);
+}
+body.dark-mode .skill .skill-item{
+        background-color: var(--nav);
+}
+body.dark-mode .team-content-responsive .member-team-responsive h3 {
+    color: var(--tiga);
+}
 
 
 /* responsif ================================================================ */
@@ -465,8 +475,8 @@ body.dark-mode .container .team-detail {
     .container header .head-media #icon{
         width: 25px;
         height: 25px;
-        background-color: rgba(236, 236, 236, 0.87);
-        color: #363636a2;
+        background-color: var(--tiga);
+        color: var(--putih);
         padding: 8px;
         border-radius: 50%;
     }
@@ -924,15 +934,15 @@ body.dark-mode .container .team-detail {
        display: none;
     }
     .container header #get-started{
-        width: 40%;
-        height: 10%;
+        width: 35%;
+        height: 15%;
         font-size: 10px;
+        text-align: center;
+        padding-top: 3px;
         margin-top: 4%;
         margin-right: 8%;
         background-color: var(--satau);
         color: var(--putih);
-        padding-top: 4px;
-        padding: auto;
         border-radius: var(--border2);
         text-decoration: none;
     }
@@ -951,10 +961,10 @@ body.dark-mode .container .team-detail {
     .container header .head-media #icon{
         width: 15px;
         height: 15px;
-        background-color: rgba(236, 236, 236, 0.87);
-        color: #363636a2;
         padding: 8px;
         border-radius: 50%;
+        background-color: var(--tiga);
+        color: var(--putih);
     }
     .container header .head-media #icon:hover{
         background-color: var(--satau);
@@ -976,8 +986,8 @@ body.dark-mode .container .team-detail {
         display: inline-flex; 
         align-items: center;
         justify-content: space-between;
-        width: 150px; 
-        height: 50px; 
+        width: 100px; 
+        height: 30px; 
         padding: 5px 10px;
         border-radius: 10px;
         gap: 5px;
@@ -995,12 +1005,11 @@ body.dark-mode .container .team-detail {
         }
     }
     .skill .skill-item #ion {
-        width: 20px;
-        height: 20px;
-        padding: 4px;
+        width: 15px;
+        height: 15px;
+        padding: 1px;
         border: solid var(--nav);
         border-radius: 50%;
-        margin-right: 5px; 
         color: var(--putih);
     }
     .skill .skill-item #tailwind-logo {
@@ -1009,12 +1018,12 @@ body.dark-mode .container .team-detail {
 
     .skill .skill-item h4 {
         margin-right: 10px;
-        font-size: 12px;
+        font-size: 8px;
         color: var(--putih);
     }
 
     .skill .skill-item #html, #js {
-        margin-right: 0;
+        margin-right: -4px;
     }
 
     .skill .skill-item #node, #py {
@@ -1051,7 +1060,7 @@ body.dark-mode .container .team-detail {
     }
 
     .team-content-responsive .member-team-responsive {
-        width: 30%;
+        width: 40%;
         padding-right: 10px;
         border-radius: 8px;
         border-right: solid var(--satau);
@@ -1060,17 +1069,19 @@ body.dark-mode .container .team-detail {
     }
 
     .team-content-responsive .member-team-responsive img {
-        width: 40%;
-        margin-top: 10px;
+        width: 60%;
+        margin-top: 5px;
     }
 
     .team-content-responsive .member-team-responsive h3 {
         margin-top: 5px;
+        width: 110%;
         font-size: 8px;
     }
 
     .team-content-responsive .member-team-responsive p {
-        font-size: 4px;
+        font-size: 5px;
+        color: var(--satau);
     }
 
 
