@@ -857,7 +857,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         color: #8f8f8f;
         font-size: 10px;
         margin-top: 10px;
-        margin-left: -42px;
+        margin-left: -20px;
         padding: 8px 18px;
         border-radius: var(--border3);
     }
@@ -1085,8 +1085,6 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     }
 
 
-
-   
     main #success{
         text-align: center;
         font-size: 20px;
@@ -1102,7 +1100,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         width: 100%;
     }
     .grid {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 20px auto;
         display: grid;
