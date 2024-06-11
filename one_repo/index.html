@@ -1,13 +1,301 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | ONE REPO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.svg" type="image/x-icon">
+
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <!-- navbar -->
+    <nav>
+        <img src="img/logo.svg" alt="onerepo">
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="#"><ion-icon name="logo-whatsapp" style="transform: translateY(2px);"></ion-icon> Contact Us</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+            <div class="mode-icon">
+                <ion-icon name="sunny"></ion-icon>
+            </div>
+    </div>
+    </nav>
+
+    <!-- container -->
+    <div class="container">
+        <header>
+            <div class="bg" id="bg1"></div>
+            <div class="bg" id="bg2"></div>
+
+            <img src="img/panah1.png" alt="onerepo" id="panah1">
+            <div class="head-developer">
+                <p>Color Picker</p>
+                <hr style="margin-bottom: 8px;">
+                <input type="color" id="colorPicker1" name="colorPicker1" value="#7002ff">
+            </div>
+
+            <span>Bersama Kami</span>
+            <h1 class="cf">Transformasi Ide Anda Menjadi Solusi Digital yang Inovatif dan Efisien</h1>
+            <p> Karena kami menggabungkan keahlian teknologi terkini dengan pemahaman mendalam tentang kebutuhan bisnis Anda</p>
+
+            <a href="" id="get-started">Contact Us</a>
+            <div class="head-media">
+                <!-- <a href=""><ion-icon name="logo-whatsapp" id="icon"></ion-icon></a> -->
+                <a href=""><ion-icon name="logo-instagram" id="icon"></ion-icon></a>
+                <a href=""><ion-icon name="logo-linkedin" id="icon"></ion-icon></a>
+                <a href=""><ion-icon name="logo-github" id="icon"></ion-icon></a>
+            </div>
+            
+            <img src="img/panah2.png" alt="onerepo" id="panah2">
+            <div class="head-ide">
+                <p>Developer</p>
+                <div class="dev">
+                    <div class="dev-ret">
+                        <input type="color" id="colorPicker2" name="colorPicker2" value="#0289ff">
+                    </div>
+                    <div class="dev-tim">
+                        <img src="img/foto.png" alt="onerepo">
+                        <img src="img/foto.png" alt="onerepo">
+                        <img src="img/foto.png" alt="onerepo">
+                    </div>
+                </div>                
+            </div>
+
+        </header>
+
+        <div class="logos">
+            <div class="logos-slide">
+                <div class="skill-item">
+                    <!-- <ion-icon name="logo-html5"></ion-icon>          -->
+                    <img src="img/icon.svg" alt="">
+                    <h4>HTML & CSS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>JAVASCRIPT</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>REACT JS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>TAILWINDCSS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>NODE JS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>PYTHON</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>DJANGO</h4>
+                </div>
+                
+            </div>
+            <div class="logos-slide">
+                <div class="skill-item">
+                    <!-- <ion-icon name="logo-html5"></ion-icon>          -->
+                    <img src="img/icon.svg" alt="">
+                    <h4>HTML & CSS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>JAVASCRIPT</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>REACT JS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>TAILWINDCSS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>NODE JS</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>PYTHON</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="img/icon.svg" alt="">
+                    <h4>DJANGO</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="team">
+                <img src="img/dev-logo.svg" alt="onerepo" id="logo-team">
+
+                <div class="team-members">
+                    <h2>Developer <span>Team</span></h2>
+                    <div class="member">
+                        <img src="img/team.png" alt="Alfin Mardani">
+                        <h3>Alfin Mardani</h3>
+                        <p>Front End & UI</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/team.png" alt="Samsul Jihad">
+                        <h3>Samsul Jihad</h3>
+                        <p>Front End & UI</p>
+                    </div>
+                    <div class="member">
+                        <img src="img/team.png" alt="Zaenul Alqusairi">
+                        <h3>Zaenul Alqusairi</h3>
+                        <p>Back End</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">
+                    <h1>Success Project</h1>
+                    <p>
+                        Dengan bangga mempersembahkan hasil kerja keras kami yang telah sukses menyelesaikan berbagai
+                        proyek inovatif, menghadirkan solusi yang efektif dan berdampak positif bagi klien kami. Keberhasilan
+                        ini merupakan bukti dedikasi dan keahlian kami dalam memberikan hasil yang luar biasa
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <h3>Web Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum repellat veritatis et molestiae iste nisi quos necessitatibus veniam dolore quae beatae sapiente assumenda dicta aspernatur nobis quasi perspiciatis consequuntur deserunt</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="" alt="">
+
+                        <h3>Web Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum repellat veritatis et molestiae iste nisi quos necessitatibus veniam dolore quae beatae sapiente assumenda dicta aspernatur nobis quasi perspiciatis consequuntur deserunt</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="" alt="">
+
+                        <h3>Web Design</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum repellat veritatis et molestiae iste nisi quos necessitatibus veniam dolore quae beatae sapiente assumenda dicta aspernatur nobis quasi perspiciatis consequuntur deserunt</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimoni">
+                <h2 id="testimoni">What Make Us Diferent?</h2>
+
+                <div class="testimoni-item">
+                    <div class="testimoni-card">
+                        <div class="tes-img">
+                            <img src="img/icon.svg" alt="">
+                            <div class="user-name">
+                                <h3>ELQUSAIRI</h3>
+                                <span>ELTECH.Io</span>
+                            </div>
+                        </div>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores facere cupiditate rerum vel aliquam amet? Alias fugit iusto atque accusantium, quos eligendi? Nesciunt recusandae dolores dolorem esse accusantium repellat tempore consequatur ipsam! Ut incidunt architecto quos a in, quo illum est temporibus voluptate laboriosam ipsum sequi iure, dignissimos iusto.</p>
+                    </div>
+                    <div class="testimoni-card">
+                        <div class="tes-img">
+                            <img src="img/icon.svg" alt="">
+                            <div class="user-name">
+                                <h3>ELQUSAIRI</h3>
+                                <span>ELTECH.Io</span>
+                            </div>
+                        </div>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores facere cupiditate rerum vel aliquam amet? Alias fugit iusto atque accusantium, quos eligendi? Nesciunt recusandae dolores dolorem esse accusantium repellat tempore consequatur ipsam! Ut incidunt architecto quos a in, quo illum est temporibus voluptate laboriosam ipsum sequi iure, dignissimos iusto.</p>
+                    </div>
+                    <div class="testimoni-card">
+                        <div class="tes-img">
+                            <img src="img/icon.svg" alt="">
+                            <div class="user-name">
+                                <h3>ELQUSAIRI</h3>
+                                <span>ELTECH.Io</span>
+                            </div>
+                        </div>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex asperiores facere cupiditate rerum vel aliquam amet? Alias fugit iusto atque accusantium, quos eligendi? Nesciunt recusandae dolores dolorem esse accusantium repellat tempore consequatur ipsam! Ut incidunt architecto quos a in, quo illum est temporibus voluptate laboriosam ipsum sequi iure, dignissimos iusto.</p>
+                    </div>
+                </div>
+
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="img/one.png" alt="onerepo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Portofolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <ul>
+            <li>Indonesia - West Nusa Tenggara</li>
+            <li>East Lombok - Suralaga.Anjani</li>
+            <li>Jln. Suragala.Mataram</li>
+            <li>+62 85337802822</li>
+        </ul>
+
+        <div class="media">
+            <a href=""><ion-icon name="logo-instagram" style="width: 30px; height: 30px;"></ion-icon></a>
+            <a href=""><ion-icon name="logo-github" style="width: 30px; height: 30px;"></ion-icon></a>
+            <a href=""><ion-icon name="logo-linkedin" style="width: 30px; height: 30px;"></ion-icon></a>
+        </div>
+    </footer>
+
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- humberger menu & icon mode -->
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('.nav-menu ul').classList.toggle('show');
+        });
+
+        document.querySelector('.mode-icon').addEventListener('click', () => {
+            const modeIcon = document.querySelector('.mode-icon ion-icon');
+            const isSunny = modeIcon.getAttribute('name') === 'sunny';
+            modeIcon.setAttribute('name', isSunny ? 'moon' : 'sunny');
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+
+    <!-- color picker -->
+    <script>
+        const colorPicker1 = document.getElementById('colorPicker1');
+        const bg1 = document.getElementById('bg1');
+
+        colorPicker1.addEventListener('input', function(event) {
+            let selectedColor = event.target.value;
+            bg1.style.backgroundColor = selectedColor;
+            bg1.innerText = selectedColor;
+        });
+
+        const colorPicker2 = document.getElementById('colorPicker2');
+        const bg2 = document.getElementById('bg2');
+        
+        colorPicker2.addEventListener('input', function(event) {
+            let selectedColor = event.target.value;
+            bg2.style.backgroundColor = selectedColor;
+            bg2.innerText = selectedColor;
+        });
+    </script>
+    
 </body>
 </html>

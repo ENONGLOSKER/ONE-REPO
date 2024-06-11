@@ -1,0 +1,806 @@
+/* 
+    CATATAN :
+
+    - biasakan menggukan variabel untuk css nya supaya lebih mudah
+    kedepanya dan kode lebih simpel dan rapi serta enak dibaca!
+    - biasakan memberikan keterangan pada kodenya supaya orang lain 
+    bisa mengerti saat membaca kodenya
+
+    #semangat_semuanya💪🔥
+*/
+
+/* --------------------------------------------------------------- */
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* variabel css */
+:root {
+
+    /* warna */
+    --satau: #6900EE;
+    --dua: #B479FF;
+    --tiga: #363636;
+    --putih: #ffffff;
+    --nav: rgba(236, 224, 253, 0.549);
+    --gradient: linear-gradient(30deg, #6900EE, #B479FF);
+    --shadow1: #b379ffa6;
+    --shadow2: #ff797990;
+
+    /* border */
+    --border1:22px;
+    --border2:12px;
+    --border3:8px;
+    --border4:6px;
+    --border5:4px;
+
+    /* font */
+    --font1: "Sora", sans-serif;
+    --font2: "Inter", sans-serif;
+
+}
+
+/* settingan awal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: var(--font2);
+    color: var(--tiga);
+}
+
+/* navbar */
+nav{
+    position: relative;
+    color: var(--putih);
+    background-color: var(--nav);
+    padding: 10px 20px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+
+}
+nav img {
+    width: 150px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    color: var(--tiga);
+    position: relative;
+}
+
+.nav-menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: var(--border2);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 2px 2px 20px rgba(223, 183, 255, 0.411);
+    backdrop-filter: blur(30px) saturate(100%);
+    -webkit-backdrop-filter: blur(30px) saturate(100%);
+    width: 150px;
+    z-index: 100;
+}
+
+.nav-menu ul.show {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 12px;
+}
+
+.nav-menu ul li {
+    margin: 10px 0;
+}
+.nav-menu ul li:last-child {
+    background-color: var(--satau);
+    border-radius: var(--border3);
+    color: var(--putih);
+}
+.nav-menu ul li:last-child a{
+    color: var(--putih);
+}
+.nav-menu ul li:last-child a:hover{
+    color: var(--dua);
+}
+.nav-menu ul li a {
+    color: var(--tiga);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.nav-menu ul li a:hover {
+    color: var(--satau);
+}
+.nav-menu input[type="checkbox"] {
+    display: none;
+}
+.hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+.mode-icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+.mode-icon:hover {
+    margin-left: 20px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px) saturate(100%);
+    -webkit-backdrop-filter: blur(30px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0.579);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 2px 2px 20px var(--shadow1);
+}
+
+/* container */
+.container{
+    height: 100%;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+.container header{
+    padding:80px 0;
+    position: relative;
+    overflow-x: hidden;
+    height: 400px;
+    z-index: -99;
+}
+.container header .team {
+    position: absolute;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--putih);
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border-left: 2px solid #6900EE;
+    box-shadow: 5px 5px 50px var(--shadow1);
+}
+
+.container header .team:nth-child(2) {
+    top: 25%;
+    left: 4%;
+    transform: rotate(-8deg);
+    animation-delay: 0s;
+}
+
+.container header .team:nth-child(3) {
+    top: 12%;
+    left: 38%;
+    transform: rotate(3deg);
+    z-index: 99;
+    animation-delay: 0.5s;
+}
+
+.container header .team:nth-child(4) {
+    top: 20%;
+    left: 70%;
+    transform: rotate(8deg);
+    animation-delay: 1s;
+}
+.container header .team img{
+    width: 50px;
+}
+.container header .team .team-part{
+    margin: 5px 0;
+}
+.container header .team .team-part p{
+    font-size: 12px;
+    color: var(--satau);
+}
+.container header .team .team-part h4{
+    font-size: 6px;
+}
+.container header .team .team-part p{
+    font-size: 5px;
+}
+
+
+.team:nth-child(2) { animation: moveUpDownWithRotate1 3s ease-in-out infinite; }
+.team:nth-child(3) { animation: moveUpDownWithRotate2 3s ease-in-out infinite; }
+.team:nth-child(4) { animation: moveUpDownWithRotate3 3s ease-in-out infinite; }
+
+
+@keyframes moveUpDownWithRotate1 {
+    0%, 100% {
+        transform: translateY(0) rotate(-8deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(-8deg);
+    }
+}
+
+@keyframes moveUpDownWithRotate2 {
+    0%, 100% {
+        transform: translateY(0) rotate(3deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(3deg);
+    }
+}
+
+@keyframes moveUpDownWithRotate3 {
+    0%, 100% {
+        transform: translateY(0) rotate(8deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(8deg);
+    }
+}
+
+/* header title */
+.container header .title{
+    font-family: var(--font1);
+    text-align: center;
+    text-transform: capitalize;
+    width: 80%;
+    position: absolute;
+    top: 45%;
+    transform: translateX(14%);
+}
+.container header .title h4{
+    font-size: 12px;
+    color: var(--satau);
+    padding-bottom: 20px;
+    animation: showin 1s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes showin{
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+.container header .title h3{
+    font-size: 10px;
+    font-weight: 400;
+    padding: 15px 0;
+    animation: fadeInbawah 1s ease forwards;
+    display: inline-block;
+}
+@keyframes fadeInbawah{
+    from {
+        opacity: 0; 
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+.container header .title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInatas 1s ease forwards;
+    display: inline-block;
+}
+
+/* Membuat animasi fadeIn dari kiri ke kanan */
+@keyframes fadeInatas {
+    from {
+        opacity: 0; 
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+
+.container header .bg{
+    width: 100px;
+    height: 100px;
+    filter: blur(90px);
+    -webkit-filter: blur(45px);
+    position: absolute;
+    border-radius: 50%;
+}
+.container header div:nth-child(5){
+    background-color: var(--satau);
+    top: 50%;
+    right: 40%;
+}
+.container header div:nth-child(6){
+    background-color: red;
+    top:60%;
+    right: 25%;     
+}
+/* team-detail */
+.container .team-detail{
+    margin: 0 20px;
+    padding-bottom: 20px;
+
+}
+.container .team-detail .team-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.container .team-detail .team-skill .team-card{
+    width: 100%;
+    height: 280px;
+    padding: 15px;
+    background-color: var(--putih);
+    border-radius: var(--border1);
+    border-left: 4px solid var(--satau);
+    box-shadow: 5px 5px 30px #b379ff3a;
+    text-align: center;
+}
+.container .team-detail .team-skill img{
+    width: 200px;
+}
+.container .team-detail .team-skill .team-part{
+    padding: 10px 0;
+}
+.container .team-detail .team-skill .team-part p{
+    font-size: 12px;
+    color: var(--satau);
+}
+.container .team-detail .team-skill .team-exp{
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+    background-color: var(--putih);
+    border-radius: var(--border1);
+    border-bottom: 4px solid #6900EE;
+    box-shadow: 5px 5px 20px rgba(207, 207, 207, 0.39);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.container .team-detail .team-skill .team-exp h3{
+    font-size: 25px;
+    color: var(--satau);
+    margin-bottom: 10px;
+}
+.container .team-detail .team-skill .team-exp ul li{
+    /* line-height: 30px; */
+    font-size: 12px;
+    margin-left: 20PX;
+}
+.container .team-detail .team-skill .team-exp a{
+    width: 85px;
+    height: 35px;
+    font-size: 12px;
+    background-color: var(--satau);
+    color: var(--putih);
+    padding: 8px 12px;
+    border-radius: var(--border3);
+    text-decoration: none;
+    box-shadow: 2px 2px 40px var(--shadow1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.container .team-detail .team-skill .team-exp #github-icon{
+    transform: translateY(-1px); 
+    width: 20px; 
+    height: 20px
+}
+.container .team-detail .team-skill .team-exp a:hover{
+    background-color: var(--tiga);
+    color: var(--putih);
+}
+
+#garis_bawah{
+    transform: translateX(-2px);
+}
+
+footer{
+    background-image: linear-gradient(-15deg, #6900EE, #B479FF );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
+footer img{
+    width: 70px;
+}
+footer ul li{
+    color: var(--putih);
+    list-style: none;
+    line-height: 20px;
+    font-size: 12px;
+}
+footer a{
+    color: var(--putih);
+    text-decoration: none;
+}
+footer .media {
+    display: flex;
+    gap: 10px;
+}
+footer .media #media-icon{
+    width: 20px;
+}
+
+/* mode dark */
+body.dark-mode {
+    background-color: #0b0035;
+    color: #ffffff;
+}
+
+body.dark-mode nav {
+    background-color: var(--nav);
+}
+
+body.dark-mode .nav-menu ul li a {
+    color: #ffffff;
+}
+
+body.dark-mode .container header .team {
+    color: var(--tiga);
+}
+
+body.dark-mode .container header .title h4 {
+    color: var(--shadow1);
+}
+
+body.dark-mode .container header .title h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .container header .title h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .container header .team .team-part p {
+    color: #B479FF;
+}
+body.dark-mode .container .team-detail {
+    color: var(--tiga);
+}
+
+
+/* responsif ================================================================ */
+@media (min-width: 768px) {
+    nav {
+        padding: 10px 80px;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        position: static;
+        width: auto;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .nav-menu ul.show {
+        display: flex;
+    }
+
+    .nav-menu ul li {
+        margin: 0 10px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* container */
+    .container{
+        height: 100%;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        overflow-x: hidden;
+    }
+    .container header{
+        padding:80px 0;
+        position: relative;
+        overflow-x: hidden;
+        height: 900px;
+    }
+    .container header .team {
+        position: absolute;
+        padding: 25px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--putih);
+        width: 243px;
+        height: 249px;
+        border-radius: var(--border1);
+        border-left: 4px solid #6900EE;
+        box-shadow: 5px 5px 50px var(--shadow1);
+    }
+    
+    .container header .team:nth-child(2) {
+        top: 20%;
+        left: 8%;
+        transform: rotate(-8deg);
+        animation-delay: 0s;
+    }
+    
+    .container header .team:nth-child(3) {
+        top: 5%;
+        left: 40%;
+        transform: rotate(3deg);
+        z-index: 99;
+        animation-delay: 0.5s;
+    }
+    
+    .container header .team:nth-child(4) {
+        top: 12%;
+        left: 70%;
+        transform: rotate(8deg);
+        animation-delay: 1s;
+    }
+    .container header .team img{
+        width: 200px;
+    }
+    .container header .team .team-part{
+        margin: 5px 0;
+    }
+    .container header .team .team-part p{
+        font-size: 12px;
+        color: var(--satau);
+    }
+    .container header .team .team-part h4{
+        font-size: 18px;
+    }
+    
+    .team:nth-child(2) { animation: moveUpDownWithRotate1 3s ease-in-out infinite; }
+    .team:nth-child(3) { animation: moveUpDownWithRotate2 3s ease-in-out infinite; }
+    .team:nth-child(4) { animation: moveUpDownWithRotate3 3s ease-in-out infinite; }
+    
+    
+    @keyframes moveUpDownWithRotate1 {
+        0%, 100% {
+            transform: translateY(0) rotate(-8deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(-8deg);
+        }
+    }
+    
+    @keyframes moveUpDownWithRotate2 {
+        0%, 100% {
+            transform: translateY(0) rotate(3deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(3deg);
+        }
+    }
+    
+    @keyframes moveUpDownWithRotate3 {
+        0%, 100% {
+            transform: translateY(0) rotate(8deg);
+        }
+        50% {
+            transform: translateY(-20px) rotate(8deg);
+        }
+    }
+    
+    /* header title */
+    .container header .title{
+        font-family: var(--font1);
+        text-align: center;
+        text-transform: capitalize;
+        width: 50%;
+        position: absolute;
+        top: 40%;
+        transform: translateX(50%);
+    }
+    .container header .title h4{
+        font-size: 18px;
+        color: var(--satau);
+        padding-bottom: 20px;
+        animation: showin 1s ease forwards;
+        animation-delay: 1s;
+    }
+    @keyframes showin{
+        from {
+            opacity: 0; 
+        }
+        to {
+            opacity: 1; 
+        }
+    }
+    .container header .title h3{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 15px 0;
+        animation: fadeInbawah 1s ease forwards;
+        display: inline-block;
+    }
+    @keyframes fadeInbawah{
+        from {
+            opacity: 0; 
+            transform: translateY(-100%);
+        }
+        to {
+            opacity: 1; 
+            transform: translateX(0); 
+        }
+    }
+    
+    .container header .title h1 {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0 110px;
+        opacity: 0;
+        animation: fadeInatas 1s ease forwards;
+        display: inline-block;
+    }
+    
+    /* Membuat animasi fadeIn dari kiri ke kanan */
+    @keyframes fadeInatas {
+        from {
+            opacity: 0; 
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1; 
+            transform: translateX(0); 
+        }
+    }
+    
+    
+    .container header .bg{
+        width: 180px;
+        height: 180px;
+        filter: blur(100px);
+        -webkit-filter: blur(100px);
+        position: absolute;
+        border-radius: 50%;
+    }
+    .container header div:nth-child(5){
+        background-color: var(--satau);
+        top: 40%;
+        right: 50%;
+    }
+    .container header div:nth-child(6){
+        background-color: red;
+        top: 40%;
+        right: 40%;     
+    }
+    
+    /* team-detail */
+    .container .team-detail{
+        margin: -150px 80px;
+        padding-bottom: 100px;
+    
+    }
+    .container .team-detail .team-skill{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .container .team-detail .team-skill .team-card{
+        width: 40%;
+        height: 320px;
+        padding: 25px 12px;
+        background-color: var(--putih);
+        border-radius: var(--border1);
+        border-left: 4px solid var(--satau);
+        box-shadow: 5px 5px 30px #b379ff3a;
+    }
+    .container .team-detail .team-skill img{
+        width: 230px;
+    }
+    .container .team-detail .team-skill .team-part{
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+    .container .team-detail .team-skill .team-part p{
+        font-size: 12px;
+        color: var(--satau);
+    }
+    
+    .container .team-detail .team-skill .team-exp{
+        width: 100%;
+        height: 320px;
+        padding: 30px 50px 60px 50px;
+        background-color: var(--putih);
+        border-radius: var(--border1);
+        border-bottom: 4px solid #6900EE;
+        box-shadow: 5px 5px 20px rgba(207, 207, 207, 0.39);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: end;
+    }
+    .container .team-detail .team-skill .team-exp h3{
+        font-size: 25px;
+        color: var(--satau);
+        margin-bottom: 10px;
+    }
+    .container .team-detail .team-skill .team-exp ul li{
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .container .team-detail .team-skill .team-exp a{
+        width: 110px;
+        height: 40px;
+        font-size: 15px;
+        background-color: var(--satau);
+        color: var(--putih);
+        padding: 8px 12px;
+        border-radius: var(--border3);
+        text-decoration: none;
+        box-shadow: 2px 2px 40px var(--shadow1);
+        text-align: center;
+    }
+    .container .team-detail .team-skill .team-exp a:hover{
+        background-color: var(--tiga);
+        color: var(--putih);
+    }
+    #garis_bawah{
+        transform: translateX(-2px);
+        margin-top: 30px;
+    }
+    
+    footer{
+        background-image: linear-gradient(-15deg, #6900EE, #B479FF );
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 80px;
+        height: 220px;
+        text-align: left;
+    }
+    footer img{
+        width: 13%;
+    }
+    footer ul li{
+        color: var(--putih);
+        list-style: none;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    footer a{
+        color: var(--putih);
+        text-decoration: none;
+    }
+    footer .media {
+        display: flex;
+        gap: 25px;
+    }
+    footer .media #media-icon{
+        width: 30px;
+        height: 50px;
+    }
+}
