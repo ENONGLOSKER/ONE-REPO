@@ -17,11 +17,11 @@
     --shadow2: #ff797990;
 
     /* border */
-    --border1:22px;
-    --border2:12px;
-    --border3:8px;
-    --border4:6px;
-    --border5:4px;
+    --border1: 22px;
+    --border2: 12px;
+    --border3: 8px;
+    --border4: 6px;
+    --border5: 4px;
 
     /* font */
     --font1: "Sora", sans-serif;
@@ -30,18 +30,17 @@
 }
 
 /* settingan awal */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
-body{
+
+body {
     font-family: var(--font2);
     color: var(--tiga);
 }
-
-/* navbar */
 nav{
     position: relative;
     color: var(--putih);
@@ -53,6 +52,7 @@ nav{
     align-items: center;
     backdrop-filter: blur(25px) saturate(180%);
     -webkit-backdrop-filter: blur(25px) saturate(180%);
+    z-index: 25;
 
 }
 nav img {
@@ -140,42 +140,93 @@ nav img {
     box-shadow: 2px 2px 20px var(--shadow1);
 }
 
+
+
 .hero {
-    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
     color: black;
     text-align: center;
-    padding: 120px 300px;
-    margin-top: 60px;
-    font-family: var(--font1);
+    padding: 120px 0;
+    /* margin-top: 60px; */
+}
+
+.hero #colorPicker2 {
+    width: 128px;
+    margin-top: 3px;
+    height: 75px;
+    border: none;
+    background-color: transparent;
 }
 
 .hero span {
-    background-color: #ffffff66;
-    font-size: 25px;
-    color: #A7A7A7;
-    padding: 10px 25px;
-    border-radius: 5px;
-}
-
-.hero p {
-    font-size: 24px;
-    margin: 30px 0 0 0;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-/* .hero h1 span {
-    background-color: #ffffff66;
+    background-color: var(--satau);
     color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-} */
+    padding: 2px 7px;
+}
 
-.hero h2{
-    font-size: 13px;
+.hero .hero-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 150px;
+}
+
+.hero .hero-2 p {
+    background-color: var(--nav);
+    padding: 7px 25px;
+    font-size: 30px;
+    color: var(--putih);
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+
+.hero .bg{
+    width: 100px;
+    height: 100px;
+    filter: blur(90px);
+    -webkit-filter: blur(45px);
+    position: absolute;
+    border-radius: 50%;
+}
+
+
+.hero .hero-3 {
+    margin: 0 200px;
+}
+
+.hero .hero-3 p {
+    font-size: 30px;
+}
+
+.hero .hero-3 h1 {
+    font-size: 60px;
+}
+
+.hero .team {
+    margin: 30px 0;
+}
+
+.hero .team .team-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 310px;
+}
+
+.hero .team .team-img div img {
+    width: 58px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+.hero .team h2 {
+    font-size: 20px;
+    color: var(--satau);
+}
+
+.hero .team img:nth-child(2) {
+    margin: 0 -20px;
 }
 
 .projects {
@@ -189,6 +240,8 @@ nav img {
 .project-card {
     background: #f5f5f5;
     padding: 200px 20px 20px 20px;
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -202,115 +255,220 @@ nav img {
     margin: 0;
     color: #333;
 }
-footer{
-    background-image: linear-gradient(-15deg, #6900EE, #B479FF );
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    padding: 20px 0;
+
+footer {
+    background: linear-gradient(to right, #6a1b9a, #8e24aa);
+    color: white;
     text-align: center;
-}
-footer img{
-    width: 70px;
-}
-footer ul li{
-    color: var(--putih);
-    list-style: none;
-    line-height: 20px;
-    font-size: 12px;
-}
-footer a{
-    color: var(--putih);
-    text-decoration: none;
-}
-footer .media {
+    padding: 70px;
+    margin-top: 20px;
     display: flex;
-    gap: 10px;
-}
-footer .media #media-icon{
-    width: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* mode dark */
+footer .media a ion-icon {
+    width: 170px;
+    color: #B479FF;
+    width: 30px;
+    height: 30px;
+}
+
+footer ul li {
+    margin: 20px 0;
+}
+
+footer ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li {
+    display: flex;
+    text-decoration: none;
+}
+
+footer .footer-content div a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Dark mode styles */
 body.dark-mode {
     background-color: #0b0035;
     color: #ffffff;
 }
 
 body.dark-mode nav {
+    /* background-color: #1e1e1e; */
     background-color: var(--nav);
 }
 
 body.dark-mode .nav-menu ul li a {
-    color: #ffffff;
+    color: white;
 }
-body.dark-mode .hero {
-    color: #ffffff;
+
+body.dark-mode .mode-icon ion-icon[name="sunny"] {
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+body.dark-mode .hamburger-menu ion-icon[name="menu"] {
+    font-size: 25px;
+}
+
+body.dark-mode .nav-menu ul li:nth-child(5) a {
+    background-color: var(--putih);
+    color: #0b0035;
+}
+
+body.dark-mode .hero p {
+    color: white;
+}
+
+body.dark-mode .hero h1 {
+    color: white;
+}
+
+body.dark-mode .hero span {
+    background-color: var(--putih);
+    color: var(--satau);
+    padding: 2px 7px;
+}
+
+body.dark-mode .team h2 {
+    color: var(--putih);
+}
+
+body.dark-mode .hero .team img {
+    background-color: #0b0035;
+}
+
+body.dark-mode .hero .hero-2 p {
+    background-color: var(--nav);
+    color: #0b0035;
+}
+
+body.dark-mode .project-card {
+    background-color: var(--nav);
+}
+
+body.dark-mode .project-card p {
+    color: var(--putih);
 }
 
 
-/* responsif ================================================================ */
+
+/* responsive navbar */
+
 @media (min-width: 768px) {
     nav {
         padding: 10px 80px;
-    }
-
-    .nav-menu ul {
-        display: flex;
-        position: static;
-        width: auto;
-        box-shadow: none;
-        border: none;
-        background-color: transparent;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-    }
-
-    .nav-menu ul.show {
-        display: flex;
-    }
-
-    .nav-menu ul li {
-        margin: 0 10px;
+        }
+        
+        .nav-menu ul {
+            display: flex;
+            position: static;
+            width: auto;
+            box-shadow: none;
+            border: none;
+            background-color: transparent;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            }
+            
+            .nav-menu ul.show {
+                display: flex;
+                }
+                
+                .nav-menu ul li {
+                    margin: 0 10px;
+                    z-index: 5;
     }
 
     .hamburger-menu {
         display: none;
     }
+}
+/* Responsive styles */
+@media (max-width: 768px) {
 
-    footer{
-        background-image: linear-gradient(-15deg, #6900EE, #B479FF );
+    .hero img {
+        width: 20px;
+    }
+
+    .hero {
+        margin: 0 30px;
+    }
+
+    .hero .hero-2 {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 80px;
-        height: 220px;
-        text-align: left;
+        margin: 20px 30px;
+
     }
 
-    footer img{
-        width: 13%;
+    .hero .hero-2 p {
+        font-size: 13px;
     }
-    footer ul li{
-        color: var(--putih);
-        list-style: none;
-        line-height: 35px;
-        font-size: 16px;
+
+    .hero .hero-3 {
+        margin: 0 10px;
+
     }
-    footer a{
-        color: var(--putih);
-        text-decoration: none;
+
+    .hero .hero-3 p {
+        font-size: 13px;
     }
-    footer .media {
+
+    .hero .hero-3 h1 {
+        font-size: 25px;
+    }
+
+    .hero .team h2 {
+        font-size: 10px;
+        margin: -15px 0;
+    }
+
+    .hero .team div img {
+        width: 20px;
+    }
+
+    .hero .team .team-img {
         display: flex;
-        gap: 25px;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 70px;
     }
-    footer .media #media-icon{
-        width: 30px;
-        height: 50px;
+
+    .hero .team .team-img div img {
+        width: 20px;
+        padding: 1px;
+    }
+
+    .hero .team img:nth-child(2) {
+        margin: 0 -11px;
+    }
+
+    .projects {
+        grid-template-columns: none;
+        margin-top: -100px;
+    }
+
+    .project-card {
+        padding: 180px 20px 20px 20px;
+    }
+
+    footer {
+        display: grid;
+    }
+
+    footer img {
+        width: 100px;
     }
 
 }
