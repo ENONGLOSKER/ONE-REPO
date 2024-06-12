@@ -578,14 +578,14 @@ body.dark-mode .container .team-detail {
         padding: 20px;
         border-radius: var(--border2);
         box-shadow: 5px 5px 30px #b379ff3a;
-        object-fit: cover;
-        background-position: center;
+        /* object-fit: cover; */
+        /* background-position: center; */
     }
     
     .container .project .project-item div:nth-child(1){
         grid-area: pj1;
-        background-image: url('img/project-itc-dashboard.png');
-        height: 411px;
+        background-image: url('img/pj1.png');
+        width: auto;
         padding-top: 280px;
     }
     .container .project .project-item div:nth-child(2){

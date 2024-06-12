@@ -222,6 +222,62 @@ margin-left: -15px;
 margin-left: -15px;
 }
 
+.container #icon{
+    position: absolute;
+}
+.container #icon:nth-child(1){
+    color: red;
+    top: 15%;
+    left: 15%;
+}
+.container #icon:nth-child(2){
+    color: rgb(0, 68, 255);
+    top: 40%;
+    left: 20%;
+}
+.container #icon:nth-child(3){
+    color: rgb(0, 174, 255);
+    top: 11%;
+    left: 50%;
+}
+.container #icon:nth-child(4){
+    color: rgb(255, 196, 0);
+    top: 18%;
+    right: 12%;
+}
+.container #icon:nth-child(5){
+    color: rgb(0, 145, 0);
+    top: 40%;
+    right: 12%;
+}
+
+.main{
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .card {
+    background-color: rgb(211, 211, 211);
+    overflow: hidden;
+    border-radius: 22px;
+    width: 350px;
+}
+.main .card a{
+   text-decoration: none;
+}
+.main .card a img{
+   width: 350px;
+}
+.main .card .keterangan{
+   padding: 20px;
+   color: var(--satau);
+}
+.main .card .keterangan p{
+   font-size: 12px;
+   color: black;
+}
 
 
 footer{
@@ -301,6 +357,144 @@ body.dark-mode .hero {
     .hamburger-menu {
         display: none;
     }
+
+    /* CONTAINER */
+    .container{
+        padding: 100px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        width: 60%;    
+        text-transform: capitalize;
+    }
+    .container header span{
+        background-color: rgba(255, 255, 255, 0.426);
+        padding: 8px 12px;
+        border-radius: var(--border4);
+        font-size: 15px;
+    }
+    .container header p{
+        font-size: 20px;
+        margin: 12px 0;
+    }
+    .container header h1{
+        font-size: 50px;
+        font-family: var(--font1);
+        text-transform: capitalize;
+    }
+    .container header h1 span{
+        display: inline-block;
+        background-color: #6d28d9;
+        color: #ffffff;
+        padding: 5px 10px;
+        transform: rotate(-5deg);   
+        position: relative;
+        border-radius: 0;
+        z-index: -1;
+        font-size: 50px;
+    }   
+
+    .container header .bg{
+        width: 350px;
+        height: 350px;
+        filter: blur(90px);
+        -webkit-filter: blur(100px);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -99;
+    }
+    .container header .bg:nth-child(1){
+        background-color: var(--satau);
+        top: 20%;
+        right: 40%;
+    }
+    .container header .bg:nth-child(2){
+        background-color: var(--shadow2);
+        top:20%;
+        right: 25%;     
+    }
+    .container header .developer{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    .container header .developer .dev-img {
+        display: flex;
+    }
+    .container header .developer .dev-img img{
+        width: 40px; 
+        height: 40px;
+        background-color: rgba(250, 250, 250, 0.94);
+        border: 3px solid rgb(255, 255, 255);
+        padding: 2px;
+        border-radius: 50%; 
+    }
+    .container header .developer .dev-img img:nth-child(2){
+        margin-left: -15px;
+    }
+    .container header .developer .dev-img img:nth-child(3){
+        margin-left: -15px;
+    }
+
+    .container #icon{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+    }
+    .container #icon:nth-child(1){
+        color: red;
+        top: 20%;
+        left: 15%;
+    }
+    .container #icon:nth-child(2){
+        color: rgb(0, 68, 255);
+        top: 50%;
+        left: 18%;
+    }
+    .container #icon:nth-child(3){
+        color: rgb(0, 174, 255);
+        top: 12%;
+        left: 50%;
+    }
+    .container #icon:nth-child(4){
+        color: rgb(255, 196, 0);
+        top: 18%;
+        right: 15%;
+    }
+    .container #icon:nth-child(5){
+        color: rgb(0, 145, 0);
+        top: 58%;
+        right: 30%;
+    }
+
+    .main{
+        /* background-color: red; */
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .main .card {
+        background-color: rgb(211, 211, 211);
+        overflow: hidden;
+        border-radius: 22px;
+        width:323px;
+    }
+    .main .card a img{
+        width:323px;
+     }
+    
 
     footer{
         background-image: linear-gradient(-15deg, #6900EE, #B479FF );
