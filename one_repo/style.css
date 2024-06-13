@@ -695,7 +695,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         font-family: var(--font1);
         text-align: center;
         color: var(--satau);
-        margin-bottom: 20px
+        margin-bottom: 60px
     }
 
     main .diferent{
@@ -824,7 +824,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     }
     footer .media {
         display: flex;
-        gap: 25px;
+        gap: 20px;
     }
     footer .media #media-icon{
         width: 30px;
@@ -872,7 +872,8 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         font-size: 10px;
         width: 130%;
         margin-top: 20px;
-        margin-right: 20px;
+        margin-bottom: 30px;
+        margin-left: -45px;
     }
    /* Definisikan elemen latar belakang */
    .container header .bg {
@@ -939,20 +940,20 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         font-size: 10px;
         text-align: center;
         padding-top: 3px;
-        margin-top: 4%;
-        margin-right: 8%;
+        margin-right: 20px;
         background-color: var(--satau);
         color: var(--putih);
         border-radius: var(--border2);
         text-decoration: none;
+        z-index: 20;
     }
     .container header #get-started:hover{
         background-color: #6f01b8;
         box-shadow: 2px 2px 50px rgba(164, 53, 255, 0.664);
     }
     .container header .head-media{
-        margin-top: 10%;
-        margin-right: 8%;
+        margin-top: 10px;
+        margin-right: 18px;
         /* background-color: yellow; */
         display: flex;
         justify-content: space-between;
@@ -1036,29 +1037,31 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     .team{
         display: block;
         background: transparent;
+        width: 350px;
+        margin: 50px auto;
         }
     #logos{
-        width: 90%;
-        margin: auto 20px;
+        width: 100%;
+        margin: auto;
         height: 279px;
         border-radius: 15px;
         box-shadow: 4px 4px 40px #b379ff79;
         }
     .team-content{
         display: block;
-        margin: auto 20px;
+        margin: auto;
         background: transparent;
     }
     .member-team{
-        width: 100%;
-        padding: 10px 55px;
+        width: auto;
+        padding: 10px 45px;
         border-radius: 15px;
         margin-top: 10px;
         border-left: solid var(--satau);
         box-shadow: 4px 4px 40px #b379ff79;
     }
     .member-team h3, p{
-        margin-right: 20px;
+        margin: auto;
         text-align: center;
     }
     .member-team p{
@@ -1076,19 +1079,14 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     main #hasil{
         font-size: 10px;
         margin: auto;
-        text-align: center;
+        text-align: justify;
         align-items: center;
-        width: 95%;
+        width: 90%;
     }
     .grid {
-        width: 80%;
         height: auto;
-        margin: 20px auto;
-        display: grid;
-        grid-template-columns: 1fr; /* Ubah menjadi satu kolom */
-        grid-template-rows: repeat(3, auto); /* Setiap item akan berada di baris sendiri */
-        gap: 10px;
-        padding: 10px;
+        margin: 20px 20px;
+        display: block;
     }
 
     .item {
@@ -1105,18 +1103,21 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         display: block;
+        margin-top: 20px;
     }
 
     .item-2 {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         display: block;
+        margin-top: 20px;
     }
 
     .item-3 {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         display: block;
+        margin-top: 20px;
     }
 
     .item #item1{
@@ -1139,81 +1140,76 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         text-align: left;
     }
     main #def {
+        width: 80%;
         font-size: 20px;
-        margin-bottom: 10px;
+        margin: 50px auto 30px;
         text-align: center;
         color: var(--satau);
     }
 
     main .diferent {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 90px;
-        margin: 20px auto;
-        background-color: var(--nav);
+        display: block;
+        width: 90%;
+        height: 520px;
+        margin: 20px auto 0;
+        background-color: transparent;
     }
 
     .diferent-1{
-        position: relative;
-        width: 50%;
-        height: 100%; 
-        margin: auto 2px;
+        height: 150px;
+        background: var(--putih);
+        margin-top: 20px;
+        padding-top: 40px;
+        border-radius: 10px;
         box-shadow: 4px 4px 20px #b379ff79;
     }
-    .diferent-1::before{
-        position: absolute;
-        content: '';
-        height: 30px;
-        width: 30px;
-        bottom: 55px;
-        left: 15px;
-        border-radius: 50%;
-        background: var(--satau);
-    }
-    .diferent-2{
-        position: relative;
-        width: 50%;
-        height: 100%; 
-        margin: auto 2px;
-        box-shadow: 4px 4px 20px #b379ff79;
-    }
-    .diferent-2::before{
-        position: absolute;
-        content: '';
-        height: 30px;
-        width: 30px;
-        bottom: 55px;
-        left: 15px;
-        border-radius: 50%;
-        background: var(--satau);
-    }
-    .diferent-3{
-        position: relative;
-        width: 50%;
-        height: 100%; 
-        margin: auto 2px;
-        box-shadow: 4px 4px 20px #b379ff79;
-    }
-    .diferent-3::before{
-        position: absolute;
-        content: '';
-        height: 30px;
-        width: 30px;
-        bottom: 55px;
-        left: 15px;
-        border-radius: 50%;
-        background: var(--satau);
-    }
-    .diferent h1 {
-        font-size: 8px; 
-        margin: 45px auto 5px 10px;
+    .diferent .diferent-1 h1 {
+        font-size: 10px; 
+        margin: 45px auto 5px 15px;
+        color: var(--satau);
     }
 
-    .diferent p {
+    .diferent .diferent-1 p {
         font-size: 4px; 
-        margin-left: 10px;
+        margin-left: -67px;
+        width: 80%;
+    }
+    .diferent-2{
+        height: 150px;
+        background: var(--putih);
+        margin-top: 20px;
+        padding-top: 40px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 20px #b379ff79;
+    }
+    .diferent .diferent-2 h1 {
+        font-size: 10px; 
+        margin: 45px auto 5px 15px;
+        color: var(--satau);
+    }
+
+    .diferent .diferent-2 p {
+        font-size: 4px; 
+        margin-left: -47px;
+        width: 80%;
+    }
+    .diferent-3{
+        height: 150px;
+        background: var(--putih);
+        margin-top: 20px;
+        padding-top: 40px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 20px #b379ff79;
+    }
+    .diferent .diferent-3 h1 {
+        font-size: 10px; 
+        margin: 45px auto 5px 15px;
+        color: var(--satau);
+    }
+
+    .diferent .diferent-3 p {
+        font-size: 4px; 
+        margin-left: -47px;
         width: 80%;
     }
 
@@ -1222,7 +1218,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         height: 24px;
         font-size: 8px;
         align-items: center;
-        margin: 10px auto 20px 150px;
+        margin: 0 auto 20px 150px;
         color: var(--putih);
         border: none;
         background: var(--satau);
