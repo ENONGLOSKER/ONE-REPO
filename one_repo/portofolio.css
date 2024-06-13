@@ -80,7 +80,7 @@ nav img {
     box-shadow: 2px 2px 20px rgba(223, 183, 255, 0.411);
     backdrop-filter: blur(30px) saturate(100%);
     -webkit-backdrop-filter: blur(30px) saturate(100%);
-    width: 150px;
+    width: 160px;
     z-index: 100;
 }
 
