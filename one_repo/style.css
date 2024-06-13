@@ -170,7 +170,7 @@ nav img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 80%; */
+    z-index: -99;
 }
 .container header span{
     background-color: rgba(250, 250, 250, 0.438);
