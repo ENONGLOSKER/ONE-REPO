@@ -467,11 +467,11 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     }
     .container header .head-media{
         margin-top: 50px;
-        margin-right: 25px;
+        margin-right: 33px;
         /* background-color: yellow; */
         display: flex;
         justify-content: space-between;
-        width: 20%;
+        width: 30%;
     }
     .container header .head-media #icon{
         width: 25px;
@@ -489,9 +489,9 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     /* skill  */
     .skill {
         padding:120px 20px;
-        margin-top: 50px;
+        margin: 50px 80px;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 20px;
         overflow: hidden; 
         white-space: nowrap;
@@ -546,9 +546,6 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     .skill .skill-item #tailwind-logo2{
         display: none;
     }
-    .team-responsive{
-        display: none;
-    }
     .team{
         display: flex;
         width: 100%;
@@ -576,11 +573,11 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         background: var(--nav);
         border-radius: 20px;
         border-left: solid var(--satau);
-        box-shadow: 4px 4px 40px #b379ff79;
     }
     .team-content::before{
         position: absolute;
         content: 'DEVELOPER';
+        font-family: var(--font1);
         font-size: 40px;
         font-weight: bold;
         color: black;
@@ -590,6 +587,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     .team-content::after{
         position: absolute;
         content: 'TEAM';
+        font-family: var(--font1);
         font-size: 40px;
         font-weight: bold;
         color: var(--satau);
@@ -767,7 +765,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     .diferent h1{
         font-size: 30px;
         color: var(--satau);
-        margin: 170px auto 20px 30px;
+        margin: 130px auto 20px 30px;
     }
     .diferent p{
         font-size: 16px;
@@ -777,12 +775,13 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     main #end-btn{
         width: 197px;
         height: 54px;
+        font-size: 20px;
         align-items: center;
         margin: 50px 670px;
         color: var(--putih);
         border: none;
         background: var(--satau);
-        border-radius: 20px;
+        border-radius: 15px;
         box-shadow: 4px 4px 40px #b379ff79;
     }
 /* 
@@ -936,7 +935,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     }
     .container header #get-started{
         width: 35%;
-        height: 15%;
+        height: 6%;
         font-size: 10px;
         text-align: center;
         padding-top: 3px;
@@ -953,11 +952,11 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     }
     .container header .head-media{
         margin-top: 10%;
-        margin-right: 50%;
+        margin-right: 8%;
         /* background-color: yellow; */
         display: flex;
         justify-content: space-between;
-        width: 20%;
+        width: 70%;
     }
     .container header .head-media #icon{
         width: 15px;
@@ -972,14 +971,14 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         color: var(--putih);
     }
     .skill {
-        padding: 10px 10px; /* Mengurangi padding */
-        margin-top: 10px;
+        padding: 10px 10px;
+        margin-top: -65px;
         display: flex;
         justify-content: center;
         overflow: hidden; 
         white-space: nowrap;
-        background-color: transparent; /* Mengurangi margin-top */
-        gap: 10px; /* Mengurangi gap antar item */
+        gap: 10px; 
+        margin-bottom: 20px;
     }
         
         .skill .skill-item {
@@ -1035,57 +1034,36 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
         margin-right: 20px;
     }
     .team{
-        display: none;
-    }
-    .team-responsive {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 30px;
-        margin-right: 20px;
-        width: 160%;
-    }
-
-    #logos-responsive {
-        width: 20%;
-        margin-right: 10px;
-        border-radius: 8px;
+        display: block;
+        background: transparent;
+        }
+    #logos{
+        width: 90%;
+        margin: auto 20px;
+        height: 279px;
+        border-radius: 15px;
         box-shadow: 4px 4px 40px #b379ff79;
+        }
+    .team-content{
+        display: block;
+        margin: auto 20px;
+        background: transparent;
     }
-
-    .team-content-responsive {
-        display: flex;
-        justify-content: space-between;
+    .member-team{
         width: 100%;
-    }
-
-    .team-content-responsive .member-team-responsive {
-        width: 40%;
-        padding-right: 10px;
-        border-radius: 8px;
-        border-right: solid var(--satau);
-        background-color: var(--putih);
+        padding: 10px 55px;
+        border-radius: 15px;
+        margin-top: 10px;
+        border-left: solid var(--satau);
         box-shadow: 4px 4px 40px #b379ff79;
     }
-
-    .team-content-responsive .member-team-responsive img {
-        width: 60%;
-        margin-top: 5px;
+    .member-team h3, p{
+        margin-right: 20px;
+        text-align: center;
     }
-
-    .team-content-responsive .member-team-responsive h3 {
-        margin-top: 5px;
-        width: 110%;
-        font-size: 8px;
-    }
-
-    .team-content-responsive .member-team-responsive p {
-        font-size: 5px;
+    .member-team p{
         color: var(--satau);
     }
-
-
     main #success{
         text-align: center;
         font-size: 20px;
@@ -1158,6 +1136,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     .item p{
         font-size: 16px;
         margin-top: 10px;
+        text-align: left;
     }
     main #def {
         font-size: 20px;
@@ -1229,7 +1208,7 @@ body.dark-mode .team-content-responsive .member-team-responsive h3 {
     }
     .diferent h1 {
         font-size: 8px; 
-        margin: 55px auto 5px 10px;
+        margin: 45px auto 5px 10px;
     }
 
     .diferent p {
