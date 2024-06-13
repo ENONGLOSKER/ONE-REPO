@@ -68,7 +68,7 @@ nav{
     align-items: center;
     backdrop-filter: blur(25px) saturate(180%);
     -webkit-backdrop-filter: blur(25px) saturate(180%);
-
+    z-index: 1;
 }
 nav img {
     width: 150px;
@@ -96,7 +96,6 @@ nav img {
     backdrop-filter: blur(30px) saturate(100%);
     -webkit-backdrop-filter: blur(30px) saturate(100%);
     width: 160px;
-    z-index: 100;
 }
 
 .nav-menu ul.show {
@@ -164,6 +163,7 @@ nav img {
     flex-direction: column;
     align-items: center;
     position: relative;
+    
     /* overflow: hidden; */
 }
 .container header{
@@ -188,7 +188,6 @@ nav img {
 }
 .container header p{
     font-size: 12px;
-    z-index: -1;
 }
 .container header .bg{
     width: 130px;
@@ -228,6 +227,7 @@ nav img {
     width: 60px;
     border-radius: var(--border2);
     box-shadow: 4px 4px 40px #b379ff9c;
+    z-index: 100;
 }
 .container header .head-developer p{
     font-size: 8px;
@@ -243,18 +243,16 @@ nav img {
 /* panah & asset kanan */
 .container #panah2{
     position: absolute;
-    right: 80px;
-    top: 190px;
-    width: 50px;
-    transform: rotate(80deg);
-    z-index: -1;
+    right: 100px;
+    top: 185px;
+    width: 25px;
+    transform: rotate(80deg)
 }
 .container header .head-ide{
-    background-color: rgba(255, 255, 255, 0.762);
+    background-color: rgba(255, 255, 255, 0.488);
     position: absolute;
-    top: 230px;
+    top:195px;
     right: -1px;
-    z-index: 1;
     padding: 10px;
     border-radius: var(--border2);
     box-shadow: 4px 4px 40px #b379ff79;
