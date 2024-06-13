@@ -418,19 +418,17 @@ nav img {
 #garis_bawah{
     transform: translateX(-2px);
 }
-
 footer{
     background-image: linear-gradient(-15deg, #6900EE, #B479FF );
+    padding: 20px 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    padding: 20px 0;
-    text-align: center;
+    justify-content: center;
 }
 footer img{
-    width: 70px;
+    width: 80px;
 }
 footer ul li{
     color: var(--putih);
