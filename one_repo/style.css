@@ -163,8 +163,6 @@ nav img {
     flex-direction: column;
     align-items: center;
     position: relative;
-    
-    /* overflow: hidden; */
 }
 .container header{
     text-align: center;
@@ -365,7 +363,8 @@ input[type="color"]::-webkit-color-swatch {
     margin: 80px;
     padding: 20px 0;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-y: hidden;
+    width: 100%;
 }
 .logos:hover .logos-slide{
     animation-play-state: paused;  
@@ -373,6 +372,7 @@ input[type="color"]::-webkit-color-swatch {
 .logos-slide{
     display: inline-block;
     animation: 46s slide infinite linear ;
+    overflow: hidden;
 }
 
 .skill-item {
@@ -893,7 +893,7 @@ input[type="color"]::-webkit-color-swatch {
     margin: 80px;
     padding: 20px 0;
     white-space: nowrap;
-    overflow: hidden;
+    width: auto;
 }
 .logos:hover .logos-slide{
     animation-play-state: paused;  
