@@ -497,6 +497,7 @@ input[type="color"]::-webkit-color-swatch {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    border-image: fill 0 linear-gradient(#0001, #0000);
 }
 .container .content .project .project-item .project-img a{
     text-decoration: none;
@@ -507,6 +508,7 @@ input[type="color"]::-webkit-color-swatch {
     grid-area: pj1;
     background-image: url('img/pj1.png');
     height: 200px;
+    padding-top: 80px;
 }
 .container .content .project .project-item div:nth-child(2){
     grid-area: pj2;
@@ -1022,18 +1024,18 @@ input[type="color"]::-webkit-color-swatch {
 }
 .container .content .project .project-item .project-img{
     padding: 20px;
+    color: rgb(32, 32, 32);
     border-radius: var(--border2);
     box-shadow: 5px 5px 30px #b379ff3a;
+    border-image: fill 0 linear-gradient(#0001, #0000);
     display: flex;
     flex-direction: column;
     justify-content: end;
-    color: rgb(32, 32, 32);
 }
 .container .content .project .project-item .project-img a{
     text-decoration: none;
     color: var(--putih);
 }
-
 
 .container .content .project .project-item div:nth-child(1){
     grid-area: pj1;
@@ -1041,6 +1043,7 @@ input[type="color"]::-webkit-color-swatch {
     height: 410px;
     object-fit: contain;
     color: black;
+    border-radius: var(--border2);
 }
 .container .content .project .project-item div:nth-child(2){
     grid-area: pj2;
@@ -1053,7 +1056,6 @@ input[type="color"]::-webkit-color-swatch {
     background-image: url('img/project-itc-home.png');
     height: 200px;
     padding-top: 80px;
-
 }
 
 /* trestimoni */
